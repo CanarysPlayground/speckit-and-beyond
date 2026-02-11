@@ -146,10 +146,10 @@ Learn how to:
 ```
 ┌─────────────────────────────────────────────────────────┐
 │                                                         │
-│  1. Constitution → 2. Specify → 3. Plan → 4. Tasks    │
-│                                     ↓                    │
+│  1. Constitution → 2. Specify → 3. Plan → 4. Tasks      │
+│                                     ↓                   │
 │                              5. Implement               │
-│                                     ↓                    │
+│                                     ↓                   │
 │                      6. Validate & Iterate              │
 │                                                         │
 └─────────────────────────────────────────────────────────┘
