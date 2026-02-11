@@ -179,7 +179,7 @@ For this workshop, we use **GitHub Copilot** since it's widely accessible.
 - Spec Kit automatically initializes Git for version control
 
 ### ✅ Checkpoint
-You have a `recipe-manager/` directory open in VS Code with a `.speckit/` folder visible.
+You have a `recipe-manager/` directory open in VS Code with `agents/`, `specify/`, and `templates/` folders visible.
 
 ---
 
@@ -194,43 +194,81 @@ Understand what Spec Kit creates and why each component matters.
 
 ```
 recipe-manager/
-├── .speckit/
-│   ├── constitution.md          ← Project principles (empty for now)
-│   ├── features/                 ← Feature specifications go here
+├── agents/
+│   ├── speckit.analyze.agent.md
+│   ├── speckit.checklist.agent.md
+│   ├── speckit.clarify.agent.md
+│   ├── speckit.constitution.agent.md
+│   ├── speckit.implement.agent.md
+│   ├── speckit.plan.agent.md
+│   ├── speckit.specify.agent.md
+│   ├── speckit.tasks.agent.md
+│   └── speckit.taskstostories.agent.md
+├── prompts/
+├── specify/
+│   ├── memory/
+│   │   └── constitution.md       ← Project principles (empty for now)
 │   └── scripts/
-│       ├── speckit.*.sh          ← Unix/macOS scripts
-│       └── speckit.*.ps1         ← PowerShell scripts
+│       └── powershell/           ← PowerShell automation scripts
+│           ├── check-prerequisites.ps1
+│           ├── common.ps1
+│           ├── create-new-feature.ps1
+│           ├── setup-plan.ps1
+│           └── update-agent-context.ps1
+├── templates/
+│   ├── agent-file-template.md
+│   ├── checklist-template.md
+│   ├── constitution-template.md
+│   ├── plan-template.md
+│   ├── spec-template.md
+│   └── tasks-template.md
 ├── .github/
-│   └── copilot-instructions.md   ← Instructions for your AI agent
+├── .vscode/
+│   └── settings.json             ← VS Code configuration for agents
 ├── .gitignore
 └── README.md
 ```
 
-**3.2** Open `.github/copilot-instructions.md` and read it:
+**3.2** Open `.vscode/settings.json` and examine the agent configuration:
 
 This file tells GitHub Copilot:
-- How to recognize slash commands (`/speckit.*`)
-- What each command does
-- Where to read/write specification files
-- How to follow the Spec-Driven workflow
+- Agent prompt file recommendations (the `/speckit.*` commands)
+- How to recognize and execute each agent
+- Configuration for chat participant features
 
-**3.3** Check the `.speckit/scripts/` directory:
+**3.3** Explore the `agents/` directory:
 
-You'll see PowerShell (`.ps1`) and Shell (`.sh`) scripts for each slash command. These are the **automation layer** that AI agents invoke.
+You'll see multiple `.agent.md` files:
+- `speckit.constitution.agent.md` — Creates project principles
+- `speckit.specify.agent.md` — Defines feature specifications  
+- `speckit.plan.agent.md` — Generates technical plans
+- `speckit.tasks.agent.md` — Breaks down implementation tasks
+- And more...
 
-**3.4** View the empty `constitution.md`:
+These agent files define what each `/speckit.*` command does.
+
+**3.4** Check the `templates/` directory:
+
+You'll find templates that agents use:
+- `constitution-template.md` — Structure for project principles
+- `spec-template.md` — Feature specification format
+- `plan-template.md` — Implementation plan structure
+- `tasks-template.md` — Task breakdown format
+
+**3.5** View the empty `constitution.md`:
 
 ```powershell
-cat .speckit/constitution.md
+cat specify/memory/constitution.md
 ```
 
 It's empty because we haven't defined our principles yet — that's next!
 
 ### What You Learned
-- `.speckit/` is the control center for Spec-Driven Development
-- Instructions are embedded in `.github/copilot-instructions.md`
-- Scripts provide consistent automation across different shells
-- Constitution and features are stored as Markdown (human + AI readable)
+- `agents/` contains the agent definitions for each `/speckit.*` command
+- `specify/memory/` stores project constitution and feature specifications
+- `templates/` provides structure for all Spec Kit artifacts
+- `.vscode/settings.json` configures agent integration with GitHub Copilot
+- All files are Markdown-based (human + AI readable)
 
 ### ✅ Checkpoint
 You understand the purpose of each directory in the Spec Kit structure.
@@ -277,14 +315,16 @@ Copilot should explain the workflow based on the instructions file.
 
 **Problem:** Slash commands don't appear  
 **Fix:**
-1. Ensure `.github/copilot-instructions.md` exists
-2. Restart VS Code
-3. Check GitHub Copilot extension is active (bottom status bar)
+1. Ensure `.vscode/settings.json` exists with agent configurations
+2. Check that `agents/*.agent.md` files are present
+3. Restart VS Code
+4. Check GitHub Copilot extension is active (bottom status bar)
 
 **Problem:** Copilot gives generic answers, not Spec Kit specific  
 **Fix:**
-1. The instructions file might not be loaded
-2. Mention the file explicitly: *"Based on .github/copilot-instructions.md, explain /speckit.constitution"*
+1. The agent files might not be loaded
+2. Mention the agent explicitly: *"Based on agents/speckit.constitution.agent.md, explain the constitution command"*
+3. Check that `.vscode/settings.json` has correct agent paths
 
 ### What You Learned
 - Spec Kit extends AI agents through instruction files and scripts

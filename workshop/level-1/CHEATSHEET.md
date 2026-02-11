@@ -15,19 +15,30 @@
 
 ```
 recipe-manager/
-├── .speckit/
-│   ├── constitution.md          ← Project principles
-│   ├── features/                 ← Feature specifications
-│   │   └── 001-feature-name/
-│   │       ├── spec.md
-│   │       ├── plan.md
-│   │       └── tasks.md
-│   └── scripts/                  ← Automation scripts
-│       ├── speckit.constitution.ps1
-│       ├── speckit.specify.ps1
-│       └── ...
+├── agents/
+│   ├── speckit.constitution.agent.md
+│   ├── speckit.specify.agent.md
+│   ├── speckit.plan.agent.md
+│   ├── speckit.tasks.agent.md
+│   ├── speckit.implement.agent.md
+│   └── ...                          ← Other agent definitions
+├── specify/
+│   ├── memory/
+│   │   ├── constitution.md          ← Project principles
+│   │   └── features/                ← Feature specifications
+│   └── scripts/
+│       └── powershell/              ← Automation scripts
+│           ├── common.ps1
+│           ├── create-new-feature.ps1
+│           └── ...
+├── templates/
+│   ├── constitution-template.md
+│   ├── spec-template.md
+│   ├── plan-template.md
+│   └── tasks-template.md
+├── .vscode/
+│   └── settings.json                ← Agent configuration
 ├── .github/
-│   └── copilot-instructions.md   ← AI agent configuration
 └── README.md
 ```
 
@@ -112,10 +123,10 @@ git commit -m "feat: implement core recipe storage"
 | Problem | Solution |
 |---------|----------|
 | `specify: command not found` | Add uv tools to PATH or reinstall: `uv tool install specify-cli --force ...` |
-| Slash commands not appearing in Copilot | Restart VS Code, ensure `.github/copilot-instructions.md` exists |
+| Slash commands not appearing in Copilot | Restart VS Code, ensure `.vscode/settings.json` and `agents/*.agent.md` exist |
 | Permission errors on Windows | Run PowerShell as Administrator or adjust execution policy: `Set-ExecutionPolicy RemoteSigned -Scope CurrentUser` |
-| Scripts not executing | Check if `.speckit/scripts/*.ps1` files are marked as executable |
-| Copilot ignores constitution | Explicitly mention: "Based on constitution.md, ..." in prompts |
+| Scripts not executing | Check if `specify/scripts/powershell/*.ps1` files are accessible |
+| Copilot ignores constitution | Explicitly mention: "Based on specify/memory/constitution.md, ..." in prompts |
 
 ## Environment Variables
 
