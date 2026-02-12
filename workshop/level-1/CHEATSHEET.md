@@ -1,4 +1,4 @@
-# Level 1 — Quick Reference Card
+# Experiment 1 — Quick Reference Card
 
 ## Installation Commands
 
@@ -163,6 +163,7 @@ git commit -m "feat: implement core recipe storage"
 - **Spec-Driven Guide:** https://github.com/github/spec-kit/blob/main/spec-driven.md
 - **Video Tutorial:** https://www.youtube.com/watch?v=a9eR1xsfvHg
 
-## Next Level
+## Next Experiment
 
-[Level 2: Specify & Clarify →](../level-2/README.md)
+[Experiment 2: Specify & Clarify →](../level-2/README.md)
+

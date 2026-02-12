@@ -1,6 +1,6 @@
-# Level 1: Setup & Constitution — Building the Foundation
+# Experiment 1: Setup & Constitution — Building the Foundation
 
-> **Risk level:** 🟢 Zero — This level only sets up your environment and defines project principles.
+> **Risk level:** 🟢 Zero — This experiment only sets up your environment and defines project principles.
 
 ## Learning Objectives
 
@@ -32,18 +32,19 @@ By the end of this level, you will be able to:
 
 ## Workshop Structure
 
-This level contains **8 exercises**, building progressively. Estimated time: **20 minutes**.
+This experiment contains **9 exercises**, building progressively. Estimated time: **20 minutes**.
 
 | Exercise | Topic | Time |
 |----------|-------|------|
 | 1 | Install Spec Kit CLI | 2 min |
 | 2 | Initialize Your First Project | 3 min |
-| 3 | Explore the Project Structure | 2 min |
-| 4 | Verify Spec Kit Integration | 2 min |
-| 5 | Create Your Constitution | 5 min |
-| 6 | Understanding Principles | 3 min |
-| 7 | Testing the Workflow | 2 min |
-| 8 | Environment Validation | 1 min |
+| 3 | Download Workshop Support Files | 3 min |
+| 4 | Explore the Project Structure | 2 min |
+| 5 | Verify Spec Kit Integration | 2 min |
+| 6 | Create Your Constitution | 4 min |
+| 7 | Understanding Principles | 2 min |
+| 8 | Testing the Workflow | 1 min |
+| 9 | Environment Validation | 1 min |
 
 ---
 
@@ -183,7 +184,121 @@ You have a `recipe-manager/` directory open in VS Code with `agents/`, `specify/
 
 ---
 
-## Exercise 3: Explore the Project Structure
+## Exercise 3: Download Workshop Support Files
+
+### Goal
+Add AI enhancements that make this workshop easier and more effective.
+
+### Context
+
+This workshop includes two powerful AI enhancements that will help you throughout:
+
+1. **Recipe Domain Instructions** (`.github/instructions/recipe-domain.instructions.md`)
+   - Teaches GitHub Copilot about recipe terminology, measurements, and validation
+   - Improves AI code generation accuracy for the Recipe Manager
+   - Provides context on dietary restrictions, conversions, and best practices
+
+2. **SpecKitCoach Agent** (`.github/skills/speckit-coach/SKILL.md`)
+   - Your personal AI guide for Spec-Driven Development
+   - Invoke with `@SpecKitCoach` anytime for help
+   - Answers methodology questions, validates your understanding, provides encouragement
+
+### Steps
+
+**3.1** Create the `.github` directory structure:
+
+```powershell
+# From your recipe-manager project root
+mkdir .github\instructions
+mkdir .github\skills\speckit-coach
+```
+
+**3.2** Download the recipe domain instruction file:
+
+**Option A: Using PowerShell (Windows)**
+```powershell
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/CanarysPlayground/speckit-and-beyond/main/.github/instructions/recipe-domain.instructions.md" -OutFile ".github\instructions\recipe-domain.instructions.md"
+```
+
+**Option B: Using curl (macOS/Linux)**
+```bash
+curl -o .github/instructions/recipe-domain.instructions.md https://raw.githubusercontent.com/CanarysPlayground/speckit-and-beyond/main/.github/instructions/recipe-domain.instructions.md
+```
+
+**Option C: Manual Download**
+1. Visit: https://github.com/CanarysPlayground/speckit-and-beyond/blob/main/.github/instructions/recipe-domain.instructions.md
+2. Click "Raw" button
+3. Save as `.github/instructions/recipe-domain.instructions.md`
+
+**3.3** Download the SpecKitCoach agent:
+
+**Option A: Using PowerShell (Windows)**
+```powershell
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/CanarysPlayground/speckit-and-beyond/main/.github/skills/speckit-coach/SKILL.md" -OutFile ".github\skills\speckit-coach\SKILL.md"
+```
+
+**Option B: Using curl (macOS/Linux)**
+```bash
+curl -o .github/skills/speckit-coach/SKILL.md https://raw.githubusercontent.com/CanarysPlayground/speckit-and-beyond/main/.github/skills/speckit-coach/SKILL.md
+```
+
+**Option C: Manual Download**
+1. Visit: https://github.com/CanarysPlayground/speckit-and-beyond/blob/main/.github/skills/speckit-coach/SKILL.md
+2. Click "Raw" button
+3. Save as `.github/skills/speckit-coach/SKILL.md`
+
+**3.4** Verify the files are in place:
+
+```powershell
+# Check both files exist
+Test-Path .github\instructions\recipe-domain.instructions.md
+Test-Path .github\skills\speckit-coach\SKILL.md
+# Both should return: True
+```
+
+**3.5** Restart VS Code to load the new files:
+
+```powershell
+# Close VS Code completely, then reopen
+code .
+```
+
+### Why These Files Matter
+
+**Recipe Domain Instructions:**
+- ✅ AI generates better variable names (`prep_time_minutes` vs `pt`)
+- ✅ Automatic measurement conversions (cups to ml)
+- ✅ Proper validation logic for dietary restrictions
+- ✅ Consistent terminology across all generated code
+
+**SpecKitCoach Agent:**
+- ✅ Get help without leaving VS Code
+- ✅ Spec-Driven Development best practices on demand
+- ✅ Validates your checkpoints ("Am I doing this right?")
+- ✅ More helpful than generic Copilot for methodology questions
+
+### How to Use
+
+**For domain help:** Just work normally - Copilot automatically uses the instruction file  
+**For coaching:** Type `@SpecKitCoach` followed by your question:
+```
+@SpecKitCoach What's the difference between /speckit.specify and /speckit.plan?
+@SpecKitCoach Is my constitution detailed enough?
+@SpecKitCoach How do I handle edge cases in specifications?
+```
+
+### What You Learned
+- Workshop support files enhance AI assistance
+- Instruction files teach Copilot domain-specific knowledge
+- Agent skills create specialized AI assistants
+- These files work automatically once installed
+
+### ✅ Checkpoint
+Both `.github/instructions/recipe-domain.instructions.md` and `.github/skills/speckit-coach/SKILL.md` files exist in your project.
+
+---
+
+## Exercise 4: Explore the Project Structure
 
 ### Goal
 Understand what Spec Kit creates and why each component matters.
@@ -275,7 +390,7 @@ You understand the purpose of each directory in the Spec Kit structure.
 
 ---
 
-## Exercise 4: Verify Spec Kit Integration
+## Exercise 5: Verify Spec Kit Integration
 
 ### Goal
 Confirm that GitHub Copilot recognizes Spec Kit slash commands.
@@ -303,7 +418,15 @@ You should see Spec Kit commands appear in the autocomplete dropdown:
 - Reopen the `recipe-manager` project
 - Try step 4.2 again
 
-**4.4** Ask Copilot about Spec Kit:
+**4.4** Test the SpecKitCoach agent:
+
+```
+@SpecKitCoach What is Spec-Driven Development?
+```
+
+SpecKitCoach should provide a detailed, methodology-focused explanation.
+
+**4.5** Ask Copilot about Spec Kit:
 
 ```
 What is Spec-Driven Development and how do the /speckit commands work?
@@ -336,7 +459,7 @@ You can see `/speckit.*` commands in the Copilot Chat autocomplete.
 
 ---
 
-## Exercise 5: Create Your Constitution
+## Exercise 6: Create Your Constitution
 
 ### Goal
 Generate project-governing principles that will guide all development decisions.
@@ -430,7 +553,7 @@ You have a comprehensive `constitution.md` that reflects Recipe Manager's priori
 
 ---
 
-## Exercise 6: Understanding Principles
+## Exercise 7: Understanding Principles
 
 ### Goal
 Understand how principles influence specifications and generated code.
@@ -492,7 +615,7 @@ You understand how the constitution guides AI decision-making throughout the wor
 
 ---
 
-## Exercise 7: Testing the Workflow
+## Exercise 8: Testing the Workflow
 
 ### Goal
 Do a dry run of the Spec-Driven workflow without actually building anything yet.
@@ -527,7 +650,7 @@ Expected response: Each feature gets its own directory in `.speckit/features/`. 
 Show me an example of what a specification for "Core Recipe Storage" might include, without creating the file yet.
 ```
 
-This gives you a mental model before Level 2.
+This gives you a mental model before Experiment 2.
 
 **7.4** Understand the difference between commands:
 
@@ -551,10 +674,10 @@ You can explain the Spec Kit workflow from constitution to implementation.
 
 ---
 
-## Exercise 8: Environment Validation
+## Exercise 9: Environment Validation
 
 ### Goal
-Final checks before proceeding to Level 2.
+Final checks before proceeding to Experiment 2.
 
 ### Steps
 
@@ -615,11 +738,11 @@ This creates a save point before starting feature development.
 - Constitution is version-controlled like code
 
 ### ✅ Checkpoint
-All environment checks pass, constitution is committed, ready for Level 2.
+All environment checks pass, constitution is committed, ready for Experiment 2.
 
 ---
 
-## Level 1 Wrap-Up
+## Experiment 1 Wrap-Up
 
 ### What You Accomplished
 
@@ -640,7 +763,7 @@ All environment checks pass, constitution is committed, ready for Level 2.
 
 ### Time Investment vs. Benefit
 
-**20 minutes spent on Level 1 prevents:**
+**20 minutes spent on Experiment 1 prevents:**
 - Hours of misaligned implementation
 - Multiple refactoring cycles
 - Team debates about priorities
@@ -664,7 +787,7 @@ A: Yes! Use Git to merge constitution changes like any code file.
 
 ## Next Steps
 
-🚀 **Proceed to [Level 2: Specify & Clarify](../level-2/README.md)**
+🚀 **Proceed to [Experiment 2: Specify & Clarify](../level-2/README.md)**
 
 Learn how to transform user stories into rich, AI-ready specifications and explore underspecified areas with clarifying questions.
 
@@ -672,4 +795,5 @@ Learn how to transform user stories into rich, AI-ready specifications and explo
 
 ## Quick Reference
 
-See [CHEATSHEET.md](CHEATSHEET.md) for a compact reference of all Level 1 concepts, commands, and best practices.
+See [CHEATSHEET.md](CHEATSHEET.md) for a compact reference of all Experiment 1 concepts, commands, and best practices.
+

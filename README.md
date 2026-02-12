@@ -44,13 +44,15 @@ This real-world application demonstrates how Spec Kit transforms high-level requ
 - **Git** version control ([Download](https://git-scm.com/downloads))
 - **Basic understanding** of software development concepts
 
+> 💡 **Workshop Enhancement:** This workshop includes AI-powered support files (recipe domain instructions and SpecKitCoach agent) that will be downloaded in Experiment 1. These files significantly improve your learning experience by providing domain-specific AI assistance and methodology coaching.
+
 ---
 
 ## Workshop Structure
 
-| Level | Topic | Duration | Focus |
-|-------|-------|----------|-------|
-| **1** | Setup & Constitution | 20 min | Install Spec Kit, initialize project, create governing principles |
+| Experiment | Topic | Duration | Focus |
+|------------|-------|----------|-------|
+| **1** | Setup & Constitution | 20 min | Install Spec Kit, initialize project, download workshop files, create constitution |
 | **2** | Specify & Clarify | 25 min | Define requirements, ask clarifying questions, refine specifications |
 | **3** | Plan & Tasks | 25 min | Create technical plans, break down into actionable tasks |
 | **4** | Implement & Validate | 30 min | Execute implementation, validate against specs |
@@ -92,7 +94,7 @@ Open VS Code and verify:
 
 ## Learning Path
 
-### 🟢 Level 1: Setup & Constitution (Beginner)
+### 🟢 Experiment 1: Setup & Constitution (Beginner)
 **Risk level:** Zero Risk — Setting up environment and defining principles
 
 Learn how to:
@@ -101,7 +103,7 @@ Learn how to:
 - Understand the Spec-Driven Development workflow
 - Set up your development environment
 
-### 🟢 Level 2: Specify & Clarify (Beginner)
+### 🟢 Experiment 2: Specify & Clarify (Beginner)
 **Risk level:** Zero Risk — Read-only specification work
 
 Learn how to:
@@ -110,7 +112,7 @@ Learn how to:
 - Refine requirements through AI-guided questions
 - Create user-centric feature descriptions
 
-### 🟡 Level 3: Plan & Tasks (Intermediate)
+### 🟡 Experiment 3: Plan & Tasks (Intermediate)
 **Risk level:** Low Risk — Planning and task breakdown
 
 Learn how to:
@@ -119,7 +121,7 @@ Learn how to:
 - Break down plans into actionable tasks with `/speckit.tasks`
 - Review and prioritize task lists
 
-### 🟡 Level 4: Implement & Validate (Intermediate)
+### 🟡 Experiment 4: Implement & Validate (Intermediate)
 **Risk level:** Medium Risk — Actual code generation and validation
 
 Learn how to:
@@ -128,7 +130,7 @@ Learn how to:
 - Debug and fix implementation issues
 - Test the generated application
 
-### 🟠 Level 5: Advanced Features (Advanced)
+### 🟠 Experiment 5: Advanced Features (Advanced)
 **Risk level:** Medium Risk — Quality analysis and iteration
 
 Learn how to:
@@ -183,18 +185,18 @@ Learn how to:
 
 ### How to Use This Workshop
 
-1. **Follow in sequence** — Each level builds on previous knowledge
+1. **Follow in sequence** — Each experiment builds on previous knowledge
 2. **Complete all exercises** — Hands-on practice is essential
 3. **Experiment freely** — Spec Kit is forgiving; you can always regenerate
 4. **Read checkpoints** — Verify understanding before moving forward
-5. **Use cheat sheets** — Quick reference cards in each level
-6. **Ask questions** — Use GitHub Copilot Chat for help anytime
+5. **Use cheat sheets** — Quick reference cards in each experiment
+6. **Ask questions** — Use GitHub Copilot Chat or @SpecKitCoach for help anytime
 
 ### Time Management
 
 - **Strict mode:** Follow time estimates, skip "Extra Challenge" sections
 - **Deep dive mode:** Complete all exercises including challenges
-- **Self-paced:** Take breaks between levels, revisit concepts
+- **Self-paced:** Take breaks between experiments, revisit concepts
 
 ### Best Practices
 
@@ -268,6 +270,6 @@ This workshop is licensed under MIT License. See [LICENSE](LICENSE) for details.
 
 ## Ready to Start?
 
-🚀 **Begin with [Level 1: Setup & Constitution](workshop/level-1/README.md)**
+🚀 **Begin with [Experiment 1: Setup & Constitution](workshop/level-1/README.md)**
 
 Master the fundamentals of Spec-Driven Development and set up your Recipe Manager project!

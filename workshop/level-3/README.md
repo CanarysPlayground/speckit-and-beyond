@@ -1,4 +1,4 @@
-# Level 3: Plan & Tasks — From Specification to Action
+# Experiment 3: Plan & Tasks — From Specification to Action
 
 > **Risk level:** 🟡 Low — This level creates plans and tasks but doesn't generate code yet.
 
@@ -30,7 +30,7 @@ By the end of this level, you will be able to:
 
 ## Workshop Structure
 
-This level contains **6 exercises**. Estimated time: **25 minutes**.
+This experiment contains **6 exercises**. Estimated time: **25 minutes**.
 
 | Exercise | Topic | Time |
 |----------|-------|------|
@@ -628,9 +628,9 @@ git commit -m "feat: finalize implementation plan and task breakdown for core re
 git push -u origin 001-core-recipe-storage
 ```
 
-**6.6** Set expectations for Level 4:
+**6.6** Set expectations for Experiment 4:
 
-In Level 4, you'll run `/speckit.implement` which will:
+In Experiment 4, you'll run `/speckit.implement` which will:
 - Execute all 17 tasks automatically
 - Generate code for models, repository, service, CLI
 - Create tests and fixtures
@@ -649,7 +649,7 @@ You have production-ready specifications, plans, and tasks for Core Recipe Stora
 
 ---
 
-## Level 3 Wrap-Up
+## Experiment 3 Wrap-Up
 
 ### What You Accomplished
 
@@ -670,7 +670,7 @@ You have production-ready specifications, plans, and tasks for Core Recipe Stora
 
 ### Time Investment vs. Benefit
 
-**25 minutes on Level 3 prevents:**
+**25 minutes on Experiment 3 prevents:**
 - Poor technology choices discovered mid-implementation
 - Architectural refactoring (move code between layers)
 - Missing requirements (found during QA, not planning)
@@ -678,7 +678,7 @@ You have production-ready specifications, plans, and tasks for Core Recipe Stora
 
 ### Planning Quality Checklist
 
-Before Level 4, ensure:
+Before Experiment 4, ensure:
 
 - [ ] Technology stack is justified with pros/cons
 - [ ] Architecture has clear layers with separation of concerns
@@ -695,7 +695,7 @@ Before Level 4, ensure:
 
 ## Next Steps
 
-🚀 **Proceed to [Level 4: Implement & Validate](../level-4/README.md)**
+🚀 **Proceed to [Experiment 4: Implement & Validate](../level-4/README.md)**
 
 Execute your task list, generate working code, and validate against specifications and constitution.
 
@@ -703,4 +703,6 @@ Execute your task list, generate working code, and validate against specificatio
 
 ## Quick Reference
 
-See [CHEATSHEET.md](CHEATSHEET.md) for a compact reference of all Level 3 concepts, commands, and best practices.
+See [CHEATSHEET.md](CHEATSHEET.md) for a compact reference of all Experiment 3 concepts, commands, and best practices.
+
+

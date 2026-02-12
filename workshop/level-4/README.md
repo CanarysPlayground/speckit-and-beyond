@@ -1,4 +1,4 @@
-# Level 4: Implement & Validate — Code Generation and Testing
+# Experiment 4: Implement & Validate — Code Generation and Testing
 
 > **Risk level:** 🟡 Medium — This level generates code and modifies your project files.
 
@@ -825,7 +825,7 @@ Feature is complete, documented, tested, and ready for merge.
 
 ---
 
-## Level 4 Wrap-Up
+## Experiment 4 Wrap-Up
 
 ### What You Accomplished
 
@@ -848,7 +848,7 @@ Feature is complete, documented, tested, and ready for merge.
 
 ### Time Investment vs. Benefit
 
-**30 minutes on Level 4 delivered:**
+**30 minutes on Experiment 4 delivered:**
 - Fully functional Recipe Manager core
 - 82% test coverage
 - Type-checked, linted code
@@ -879,7 +879,7 @@ Feature is complete, documented, tested, and ready for merge.
 
 ## Next Steps
 
-🚀 **Proceed to [Level 5: Advanced Features](../level-5/README.md)**
+🚀 **Proceed to [Experiment 5: Advanced Features](../level-5/README.md)**
 
 Learn advanced Spec Kit capabilities: analyze specifications, create quality checklists, add features iteratively, and apply Spec-Driven Development to brownfield projects.
 
@@ -887,4 +887,5 @@ Learn advanced Spec Kit capabilities: analyze specifications, create quality che
 
 ## Quick Reference
 
-See [CHEATSHEET.md](CHEATSHEET.md) for a compact reference of all Level 4 concepts, commands, and best practices.
+See [CHEATSHEET.md](CHEATSHEET.md) for a compact reference of all Experiment 4 concepts, commands, and best practices.
+

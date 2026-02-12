@@ -1,4 +1,4 @@
-# Level 5 — Quick Reference Card
+# Experiment 5 — Quick Reference Card
 
 ## Advanced Commands
 
@@ -459,3 +459,4 @@ You've mastered Spec-Driven Development with GitHub Spec Kit:
 3. Contribute to Spec Kit community
 
 Thank you for completing this workshop!
+

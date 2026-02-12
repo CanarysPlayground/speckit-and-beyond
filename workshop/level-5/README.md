@@ -1,4 +1,4 @@
-# Level 5: Advanced Features — Analysis, Iteration, and Brownfield
+# Experiment 5: Advanced Features — Analysis, Iteration, and Brownfield
 
 > **Risk level:** 🟠 Medium — This level involves modifying existing code and analyzing complex scenarios.
 
@@ -56,7 +56,7 @@ Constitution → Specify → Plan → Tasks → Implement
 **Optional Enhancement Commands:**
 - `/speckit.analyze` — Validate specs before implementation
 - `/speckit.checklist` — Custom quality gates
-- `/speckit.clarify` — Deep dive on ambiguities (covered in Level 2)
+- `/speckit.clarify` — Deep dive on ambiguities (covered in Experiment 2)
 
 Use optional commands when:
 - Building mission-critical features (healthcare, finance)
@@ -948,7 +948,7 @@ The templates you created in this exercise are **yours to keep**. Use them for:
 
 ---
 
-## Level 5 Wrap-Up
+## Experiment 5 Wrap-Up
 
 ### What You Accomplished
 
@@ -985,12 +985,12 @@ The templates you created in this exercise are **yours to keep**. Use them for:
 
 | Workshop Level | Time | Value Delivered |
 |----------------|------|-----------------|
-| Level 1 | 20 min | Project setup, constitution |
-| Level 2 | 25 min | Specification and clarification |
-| Level 3 | 25 min | Technical plan and tasks |
-| Level 4 | 30 min | Working implementation |
-| Level 5 | 20 min | Advanced quality and iteration |
-| Level 5 (Ex 7) | +10 min (optional) | Custom instructions & agents |
+| Experiment 1 | 20 min | Project setup, constitution |
+| Experiment 2 | 25 min | Specification and clarification |
+| Experiment 3 | 25 min | Technical plan and tasks |
+| Experiment 4 | 30 min | Working implementation |
+| Experiment 5 | 20 min | Advanced quality and iteration |
+| Experiment 5 (Ex 7) | +10 min (optional) | Custom instructions & agents |
 | **Total** | **2 hours (2.5 with Exercise 7)** | **Production-ready Recipe Manager with 2 features** |
 
 **Without Spec-Driven Development:**
@@ -1037,4 +1037,5 @@ Thank you for learning with us! 🚀
 
 ## Quick Reference
 
-See [CHEATSHEET.md](CHEATSHEET.md) for a compact reference of all Level 5 concepts, commands, and best practices.
+See [CHEATSHEET.md](CHEATSHEET.md) for a compact reference of all Experiment 5 concepts, commands, and best practices.
+

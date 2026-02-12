@@ -1,4 +1,4 @@
-# Level 4 — Quick Reference Card
+# Experiment 4 — Quick Reference Card
 
 ## Implementation Commands
 
@@ -338,7 +338,7 @@ def create_recipe(self, recipe: Recipe) -> Recipe:
 
 | Problem | Diagnostic | Solution |
 |---------|------------|----------|
-| `/speckit.implement` fails | Check spec.md, plan.md, tasks.md exist | Ensure Level 3 completed |
+| `/speckit.implement` fails | Check spec.md, plan.md, tasks.md exist | Ensure Experiment 3 completed |
 | Code generated but wrong | Review plan.md clarity | Update plan.md, re-run implement |
 | Tests fail after generation | Check test assumptions | Fix implementation or test |
 | Import errors | Check `pip list` | `pip install -r requirements.txt` |
@@ -357,4 +357,5 @@ def create_recipe(self, recipe: Recipe) -> Recipe:
 
 ## Next Level
 
-[Level 5: Advanced Features →](../level-5/README.md)
+[Experiment 5: Advanced Features →](../level-5/README.md)
+

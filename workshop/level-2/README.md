@@ -1,4 +1,4 @@
-# Level 2: Specify & Clarify — Defining What to Build
+# Experiment 2: Specify & Clarify — Defining What to Build
 
 > **Risk level:** 🟢 Zero — This level focuses on specification writing without generating code.
 
@@ -30,7 +30,7 @@ By the end of this level, you will be able to:
 
 ## Workshop Structure
 
-This level contains **7 exercises**. Estimated time: **25 minutes**.
+This experiment contains **7 exercises**. Estimated time: **25 minutes**.
 
 | Exercise | Topic | Time |
 |----------|-------|------|
@@ -110,7 +110,7 @@ Based on constitution.md, what performance, privacy, and quality requirements
 apply to recipe storage?
 ```
 
-Expected response (based on your Level 1 constitution):
+Expected response (based on your Experiment 1 constitution):
 - **Privacy:** Local storage only, no cloud sync
 - **Performance:** Recipe loads in < 50ms
 - **Data integrity:** No data loss on app crash
@@ -625,7 +625,7 @@ git commit -m "docs: finalize core recipe storage specification"
 
 ### Specification Quality Checklist
 
-Before moving to Level 3, ensure:
+Before moving to Experiment 3, ensure:
 
 - [ ] All user stories have clear "who/what/why"
 - [ ] Functional requirements are complete (no "TBD" sections)
@@ -651,7 +651,7 @@ You have a production-ready specification for Core Recipe Storage.
 
 ---
 
-## Level 2 Wrap-Up
+## Experiment 2 Wrap-Up
 
 ### What You Accomplished
 
@@ -673,7 +673,7 @@ You have a production-ready specification for Core Recipe Storage.
 
 ### Time Investment vs. Benefit
 
-**25 minutes on Level 2 prevents:**
+**25 minutes on Experiment 2 prevents:**
 - Building the wrong feature
 - Misaligned implementation attempts
 - Missing critical edge cases
@@ -683,7 +683,7 @@ You have a production-ready specification for Core Recipe Storage.
 ### Common Pitfalls
 
 **Pitfall:** Spec includes technology choices ("use PostgreSQL")  
-**Fix:** Keep specs tech-agnostic. Save choices for `/speckit.plan` in Level 3.
+**Fix:** Keep specs tech-agnostic. Save choices for `/speckit.plan` in Experiment 3.
 
 **Pitfall:** Spec is too vague ("user-friendly interface")  
 **Fix:** Be measurable ("< 3 clicks to create recipe", "validation errors shown within 200ms").
@@ -698,7 +698,7 @@ You have a production-ready specification for Core Recipe Storage.
 
 ## Next Steps
 
-🚀 **Proceed to [Level 3: Plan & Tasks](../level-3/README.md)**
+🚀 **Proceed to [Experiment 3: Plan & Tasks](../level-3/README.md)**
 
 Transform your specification into a technical implementation plan with architecture decisions, tech stack choices, and actionable tasks.
 
@@ -706,4 +706,5 @@ Transform your specification into a technical implementation plan with architect
 
 ## Quick Reference
 
-See [CHEATSHEET.md](CHEATSHEET.md) for a compact reference of all Level 2 concepts, commands, and best practices.
+See [CHEATSHEET.md](CHEATSHEET.md) for a compact reference of all Experiment 2 concepts, commands, and best practices.
+

@@ -1,4 +1,4 @@
-# Level 3 — Quick Reference Card
+# Experiment 3 — Quick Reference Card
 
 ## Planning Commands
 
@@ -312,4 +312,5 @@ For Recipe Manager with < 50ms retrieval requirement:
 
 ## Next Level
 
-[Level 4: Implement & Validate →](../level-4/README.md)
+[Experiment 4: Implement & Validate →](../level-4/README.md)
+

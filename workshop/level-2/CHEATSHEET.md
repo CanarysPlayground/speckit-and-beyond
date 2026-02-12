@@ -1,4 +1,4 @@
-# Level 2 — Quick Reference Card
+# Experiment 2 — Quick Reference Card
 
 ## Specification Commands
 
@@ -126,7 +126,7 @@ Before finalizing spec, verify alignment:
 
 ## Specification Quality Checklist
 
-Use this before moving to Level 3:
+Use this before moving to Experiment 3:
 
 - [ ] All user stories use "As a [role], I want [action] so that [benefit]"
 - [ ] Functional requirements are complete (no "TBD")
@@ -171,7 +171,7 @@ ACCEPTANCE CRITERIA:
 | Problem | Solution |
 |---------|----------|
 | `/speckit.specify` fails | Ensure you're on a feature branch (`git checkout -b XXX-name`) |
-| Spec contains tech details | Refactor to focus on outcomes. Move tech choices to Level 3 (planning) |
+| Spec contains tech details | Refactor to focus on outcomes. Move tech choices to Experiment 3 (planning) |
 | Clarify has no questions | Spec might be too vague. Add more details and run clarify again |
 | Spec conflicts with constitution | Update spec to align, or update constitution if priorities changed |
 | Can't commit spec.md | Check file path: should be `.speckit/features/XXX-name/spec.md` |
@@ -195,4 +195,5 @@ ACCEPTANCE CRITERIA:
 
 ## Next Level
 
-[Level 3: Plan & Tasks →](../level-3/README.md)
+[Experiment 3: Plan & Tasks →](../level-3/README.md)
+
