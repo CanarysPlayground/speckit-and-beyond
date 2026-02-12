@@ -787,7 +787,7 @@ A: Yes! Use Git to merge constitution changes like any code file.
 
 ## Next Steps
 
-🚀 **Proceed to [Experiment 2: Specify & Clarify](../level-2/README.md)**
+🚀 **Proceed to [Experiment 2: Specify & Clarify](../experiment-2/README.md)**
 
 Learn how to transform user stories into rich, AI-ready specifications and explore underspecified areas with clarifying questions.
 
@@ -796,4 +796,5 @@ Learn how to transform user stories into rich, AI-ready specifications and explo
 ## Quick Reference
 
 See [CHEATSHEET.md](CHEATSHEET.md) for a compact reference of all Experiment 1 concepts, commands, and best practices.
+
 

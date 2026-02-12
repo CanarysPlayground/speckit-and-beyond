@@ -879,7 +879,7 @@ Feature is complete, documented, tested, and ready for merge.
 
 ## Next Steps
 
-🚀 **Proceed to [Experiment 5: Advanced Features](../level-5/README.md)**
+🚀 **Proceed to [Experiment 5: Advanced Features](../experiment-5/README.md)**
 
 Learn advanced Spec Kit capabilities: analyze specifications, create quality checklists, add features iteratively, and apply Spec-Driven Development to brownfield projects.
 
@@ -888,4 +888,5 @@ Learn advanced Spec Kit capabilities: analyze specifications, create quality che
 ## Quick Reference
 
 See [CHEATSHEET.md](CHEATSHEET.md) for a compact reference of all Experiment 4 concepts, commands, and best practices.
+
 

@@ -165,5 +165,6 @@ git commit -m "feat: implement core recipe storage"
 
 ## Next Experiment
 
-[Experiment 2: Specify & Clarify →](../level-2/README.md)
+[Experiment 2: Specify & Clarify →](../experiment-2/README.md)
+
 

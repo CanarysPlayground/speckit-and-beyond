@@ -357,5 +357,6 @@ def create_recipe(self, recipe: Recipe) -> Recipe:
 
 ## Next Level
 
-[Experiment 5: Advanced Features →](../level-5/README.md)
+[Experiment 5: Advanced Features →](../experiment-5/README.md)
+
 

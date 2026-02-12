@@ -695,7 +695,7 @@ Before Experiment 4, ensure:
 
 ## Next Steps
 
-🚀 **Proceed to [Experiment 4: Implement & Validate](../level-4/README.md)**
+🚀 **Proceed to [Experiment 4: Implement & Validate](../experiment-4/README.md)**
 
 Execute your task list, generate working code, and validate against specifications and constitution.
 
@@ -704,5 +704,6 @@ Execute your task list, generate working code, and validate against specificatio
 ## Quick Reference
 
 See [CHEATSHEET.md](CHEATSHEET.md) for a compact reference of all Experiment 3 concepts, commands, and best practices.
+
 
 

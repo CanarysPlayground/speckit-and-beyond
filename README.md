@@ -285,6 +285,7 @@ Found an issue or have suggestions for improving this workshop? Please open an i
 
 ## Ready to Start?
 
-🚀 **Begin with [Experiment 1: Setup & Constitution](workshop/level-1/README.md)**
+🚀 **Begin with [Experiment 1: Setup & Constitution](workshop/experiment-1/README.md)**
 
 Master the fundamentals of Spec-Driven Development and set up your Recipe Manager project!
+

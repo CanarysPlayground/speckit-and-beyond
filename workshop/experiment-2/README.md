@@ -698,7 +698,7 @@ You have a production-ready specification for Core Recipe Storage.
 
 ## Next Steps
 
-🚀 **Proceed to [Experiment 3: Plan & Tasks](../level-3/README.md)**
+🚀 **Proceed to [Experiment 3: Plan & Tasks](../experiment-3/README.md)**
 
 Transform your specification into a technical implementation plan with architecture decisions, tech stack choices, and actionable tasks.
 
@@ -707,4 +707,5 @@ Transform your specification into a technical implementation plan with architect
 ## Quick Reference
 
 See [CHEATSHEET.md](CHEATSHEET.md) for a compact reference of all Experiment 2 concepts, commands, and best practices.
+
 

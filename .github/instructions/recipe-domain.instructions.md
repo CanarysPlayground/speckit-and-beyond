@@ -123,3 +123,4 @@ When writing tests, consider:
 ---
 
 Use this context to generate accurate, user-friendly code for the Recipe Manager application. Prioritize data integrity, clear validation messages, and helpful search functionality.
+

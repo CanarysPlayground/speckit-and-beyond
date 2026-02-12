@@ -195,5 +195,6 @@ ACCEPTANCE CRITERIA:
 
 ## Next Level
 
-[Experiment 3: Plan & Tasks →](../level-3/README.md)
+[Experiment 3: Plan & Tasks →](../experiment-3/README.md)
+
 
