@@ -10,8 +10,8 @@ This workshop teaches you how to **accelerate your development process** by comb
 
 Instead of just learning Spec Kit commands, you'll discover how to create an **AI-powered development environment** where:
 - **Spec Kit** structures your workflow (constitution → specify → plan → tasks → implement)
-- **Instruction files** teach GitHub Copilot your domain (recipe measurements, dietary restrictions, validation rules) - work automatically
-- **Custom skills** (@SpecKitCoach) provide on-demand methodology coaching - invoked explicitly
+- **Instruction files** teach GitHub Copilot your domain (recipe measurements, dietary restrictions, validation rules)
+- **Custom skills** (@SpecKitCoach) provide on-demand methodology coaching
 
 **The result?** AI generates better code because it understands both your project principles AND your domain context. You move faster because specialized agents coach you through best practices without leaving your editor.
 
