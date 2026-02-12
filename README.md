@@ -15,17 +15,6 @@ Instead of just learning Spec Kit commands, you'll discover how to create an **A
 
 **The result?** AI generates better code because it understands both your project principles AND your domain context. You move faster because specialized agents coach you through best practices without leaving your editor.
 
-### How This Accelerates Development
-
-| Without These Tools | With Spec Kit + Instructions + Agents |
-|---------------------|---------------------------------------|
-| AI suggestions are generic | AI understands your domain and constraints (project-specific) |
-| Spending hours on requirements | Structured specifications in minutes |
-| Frequent rework from misalignment | Constitution ensures consistency |
-| Googling best practices | @SpecKitCoach answers in context |
-| Manual code generation | AI implements from detailed specs |
-| Inconsistent variable names | Domain instructions ensure quality (per project) |
-
 ### Key Characteristics
 
 - **AI-enhanced workflow** — GitHub Copilot becomes domain-aware through instruction files
@@ -33,7 +22,7 @@ Instead of just learning Spec Kit commands, you'll discover how to create an **A
 - **On-demand coaching** — custom skills provide methodology help without context switching
 - **Works with multiple AI tools** — GitHub Copilot, Claude Code, Cursor, Windsurf, and more
 - **Technology independent** — Use any tech stack, language, or framework
-- **Reusable patterns** — Take instruction files and agents to your own projects
+- **Reusable patterns** — Take instruction files, and custom skills to your own projects
 
 ---
 
