@@ -198,20 +198,23 @@ This workshop includes two powerful AI enhancements that will help you throughou
    - Improves AI code generation accuracy for the Recipe Manager
    - Provides context on dietary restrictions, conversions, and best practices
 
-2. **SpecKitCoach Agent** (`.github/skills/speckit-coach/SKILL.md`)
+2. **SpecKitCoach skill** (`.github/skills/speckit-coach/SKILL.md`)
    - Your personal AI guide for Spec-Driven Development
    - Invoke with `@SpecKitCoach` anytime for help
    - Answers methodology questions, validates your understanding, provides encouragement
 
 ### Steps
 
-**3.1** Create the `.github` directory structure:
+**3.1** Create the `.github` directory structure **in your recipe-manager project**:
 
 ```powershell
-# From your recipe-manager project root
+# IMPORTANT: Run this from your recipe-manager project root (not the workshop folder)
+cd recipe-manager  # Navigate to your project if not already there
 mkdir .github\instructions
 mkdir .github\skills\speckit-coach
 ```
+
+> ⚠️ **Critical:** These files must be in your `recipe-manager` project directory, NOT the workshop repository. The instruction file only affects the project where it's located.
 
 **3.2** Download the recipe domain instruction file:
 
@@ -230,7 +233,7 @@ curl -o .github/instructions/recipe-domain.instructions.md https://raw.githubuse
 2. Click "Raw" button
 3. Save as `.github/instructions/recipe-domain.instructions.md`
 
-**3.3** Download the SpecKitCoach agent:
+**3.3** Download the SpecKitCoach skill:
 
 **Option A: Using PowerShell (Windows)**
 ```powershell
@@ -247,21 +250,37 @@ curl -o .github/skills/speckit-coach/SKILL.md https://raw.githubusercontent.com/
 2. Click "Raw" button
 3. Save as `.github/skills/speckit-coach/SKILL.md`
 
-**3.4** Verify the files are in place:
+**3.4** Verify the files are in place **in your recipe-manager project**:
 
 ```powershell
-# Check both files exist
+# From recipe-manager project root
 Test-Path .github\instructions\recipe-domain.instructions.md
 Test-Path .github\skills\speckit-coach\SKILL.md
 # Both should return: True
 ```
 
+> 💡 **Tip:** Use `pwd` to confirm you're in the recipe-manager directory, not the workshop directory.
+
 **3.5** Restart VS Code to load the new files:
 
 ```powershell
-# Close VS Code completely, then reopen
+# Close VS Code completely, then reopen your recipe-manager project
 code .
 ```
+
+**3.6** Test that the instruction file is working:
+
+Open Copilot Chat and ask:
+```
+What measurement conversions should I use for recipes? Show the conversion for 1 cup to ml.
+```
+
+**Expected response:** Copilot should mention "1 cup = 240 ml" (from recipe-domain.instructions.md)
+
+**If you get a generic answer:**
+- Verify the file is in `recipe-manager/.github/instructions/` (not in workshop folder)
+- Restart VS Code again
+- Ensure you're asking from within the recipe-manager project
 
 ### Why These Files Matter
 
@@ -271,7 +290,7 @@ code .
 - ✅ Proper validation logic for dietary restrictions
 - ✅ Consistent terminology across all generated code
 
-**SpecKitCoach Agent:**
+**SpecKitCoach skill:**
 - ✅ Get help without leaving VS Code
 - ✅ Spec-Driven Development best practices on demand
 - ✅ Validates your checkpoints ("Am I doing this right?")
@@ -279,22 +298,42 @@ code .
 
 ### How to Use
 
-**For domain help:** Just work normally - Copilot automatically uses the instruction file  
-**For coaching:** Type `@SpecKitCoach` followed by your question:
+**Recipe Domain Instructions (Automatic):**
+- Works automatically once installed in your project's `.github/instructions/` folder
+- No invocation needed - Copilot always uses this context when working in that project
+- Must restart VS Code after adding the file
+- Only affects the project where it's located
+
+**SpecKitCoach Skill (Explicit):**
+- Type `@SpecKitCoach` followed by your question in Copilot Chat
+- Only active when explicitly invoked
+- Provides targeted methodology coaching
+
+**Examples:**
 ```
 @SpecKitCoach What's the difference between /speckit.specify and /speckit.plan?
 @SpecKitCoach Is my constitution detailed enough?
 @SpecKitCoach How do I handle edge cases in specifications?
 ```
 
+**Key Difference:**
+
+| Feature | Instruction File | SpecKitCoach Skill |
+|---------|-----------------|--------------------|
+| **Activation** | Automatic | Explicit (`@SpecKitCoach`) |
+| **When Active** | Always (in that project) | Only when invoked |
+| **Purpose** | Domain knowledge | Methodology coaching |
+| **Scope** | All Copilot interactions in project | Specific Q&A sessions |
+| **Location** | Project's `.github/instructions/` | Project's `.github/skills/` |
+
 ### What You Learned
-- Workshop support files enhance AI assistance
-- Instruction files teach Copilot domain-specific knowledge
-- Agent skills create specialized AI assistants
-- These files work automatically once installed
+- Workshop support files enhance AI assistance in different ways
+- **Instruction files** work automatically - teach Copilot domain-specific knowledge
+- **Skills** require explicit invocation - provide interactive coaching
+- Restart VS Code to load these files
 
 ### ✅ Checkpoint
-Both `.github/instructions/recipe-domain.instructions.md` and `.github/skills/speckit-coach/SKILL.md` files exist in your project.
+Both files exist in your **recipe-manager project** (`.github/instructions/recipe-domain.instructions.md` and `.github/skills/speckit-coach/SKILL.md`), and Copilot correctly answers the measurement conversion test question.
 
 ---
 
@@ -418,13 +457,21 @@ You should see Spec Kit commands appear in the autocomplete dropdown:
 - Reopen the `recipe-manager` project
 - Try step 4.2 again
 
-**4.4** Test the SpecKitCoach agent:
+**4.4** Test the SpecKitCoach skill:
 
+> **Note:** The invocation method for custom skills may vary by VS Code/Copilot version. Try these methods:
+
+**Method 1: Direct invocation (most common)**
 ```
 @SpecKitCoach What is Spec-Driven Development?
 ```
 
-SpecKitCoach should provide a detailed, methodology-focused explanation.
+**Method 2: If @ doesn't work, reference the file:**
+```
+Based on .github/skills/speckit-coach/SKILL.md, what is Spec-Driven Development?
+```
+
+SpecKitCoach should provide a detailed, methodology-focused explanation. If neither works, the skill is still useful as reference documentation.
 
 **4.5** Ask Copilot about Spec Kit:
 
@@ -796,5 +843,6 @@ Learn how to transform user stories into rich, AI-ready specifications and explo
 ## Quick Reference
 
 See [CHEATSHEET.md](CHEATSHEET.md) for a compact reference of all Experiment 1 concepts, commands, and best practices.
+
 
 

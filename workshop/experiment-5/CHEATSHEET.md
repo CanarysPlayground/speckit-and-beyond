@@ -357,7 +357,7 @@ Domain vocabulary
 - ❌ Generic CRUD operations
 - ❌ Solo short-term projects
 
-### Custom Agent Skills
+### Custom skills
 
 **Purpose:** Create specialized AI assistants for workflows
 
@@ -414,7 +414,7 @@ What to say when invoked
 - Provides conversion formulas (cups to ml)
 - Defines validation rules (dietary restrictions)
 
-**Agent Skill:** `.github/skills/speckit-coach/SKILL.md`
+**Skill:** `.github/skills/speckit-coach/SKILL.md`
 - Guides through Spec-Driven Development workflow
 - Answers methodology questions
 - Validates understanding at checkpoints
@@ -426,8 +426,8 @@ What to say when invoked
 # For instruction file:
 Based on .github/instructions/recipe-domain.instructions.md, create a template for [YOUR DOMAIN].
 
-# For agent skill:
-Based on .github/skills/speckit-coach/SKILL.md, create an agent skill for [YOUR AGENT PURPOSE].
+# For Skill:
+Based on .github/skills/speckit-coach/SKILL.md, create an skill for [YOUR AGENT PURPOSE].
 ```
 
 **Benefits:**
@@ -459,5 +459,6 @@ You've mastered Spec-Driven Development with GitHub Spec Kit:
 3. Contribute to Spec Kit community
 
 Thank you for completing this workshop!
+
 
 

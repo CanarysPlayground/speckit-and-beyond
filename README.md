@@ -4,14 +4,14 @@
 
 ## Description
 
-This workshop teaches you how to **accelerate your development process** by combining three powerful AI-enhanced tools: **GitHub Spec Kit** for structured development, **instruction files** for domain-specific AI assistance, and **custom agents** for methodology coaching. Together, these tools transform how you build software - from vague ideas to production-ready code.
+This workshop teaches you how to **accelerate your development process** by combining three powerful AI-enhanced tools: **GitHub Spec Kit** for structured development, **instruction files** for domain-specific AI assistance, and **custom skills** for methodology coaching. Together, these tools transform how you build software - from vague ideas to production-ready code.
 
 **What makes this workshop different:**
 
 Instead of just learning Spec Kit commands, you'll discover how to create an **AI-powered development environment** where:
 - **Spec Kit** structures your workflow (constitution → specify → plan → tasks → implement)
-- **Instruction files** teach GitHub Copilot your domain (recipe measurements, dietary restrictions, validation rules)
-- **Custom agents** (@SpecKitCoach) provide on-demand methodology guidance and validate your approach
+- **Instruction files** teach GitHub Copilot your domain (recipe measurements, dietary restrictions, validation rules) - work automatically
+- **Custom skills** (@SpecKitCoach) provide on-demand methodology coaching - invoked explicitly
 
 **The result?** AI generates better code because it understands both your project principles AND your domain context. You move faster because specialized agents coach you through best practices without leaving your editor.
 
@@ -19,18 +19,18 @@ Instead of just learning Spec Kit commands, you'll discover how to create an **A
 
 | Without These Tools | With Spec Kit + Instructions + Agents |
 |---------------------|---------------------------------------|
-| AI suggestions are generic | AI understands your domain and constraints |
+| AI suggestions are generic | AI understands your domain and constraints (project-specific) |
 | Spending hours on requirements | Structured specifications in minutes |
 | Frequent rework from misalignment | Constitution ensures consistency |
 | Googling best practices | @SpecKitCoach answers in context |
 | Manual code generation | AI implements from detailed specs |
-| Inconsistent variable names | Domain instructions ensure quality |
+| Inconsistent variable names | Domain instructions ensure quality (per project) |
 
 ### Key Characteristics
 
 - **AI-enhanced workflow** — GitHub Copilot becomes domain-aware through instruction files
 - **Structured methodology** — Spec Kit guides you from principles to implementation  
-- **On-demand coaching** — Custom agents provide methodology help without context switching
+- **On-demand coaching** — custom skills provide methodology help without context switching
 - **Works with multiple AI tools** — GitHub Copilot, Claude Code, Cursor, Windsurf, and more
 - **Technology independent** — Use any tech stack, language, or framework
 - **Reusable patterns** — Take instruction files and agents to your own projects
@@ -65,7 +65,7 @@ This real-world application demonstrates how Spec Kit transforms high-level requ
 - **Git** version control ([Download](https://git-scm.com/downloads))
 - **Basic understanding** of software development concepts
 
-> 💡 **Workshop Enhancement:** This workshop includes AI-powered support files (recipe domain instructions and SpecKitCoach agent) that will be downloaded in Experiment 1. These files significantly improve your learning experience by providing domain-specific AI assistance and methodology coaching.
+> 💡 **Workshop Enhancement:** This workshop includes AI-powered support files (recipe domain instructions and SpecKitCoach skill) that will be downloaded in Experiment 1. These files significantly improve your learning experience by providing domain-specific AI assistance and methodology coaching.
 
 ---
 
@@ -283,4 +283,5 @@ Found an issue or have suggestions for improving this workshop? Please open an i
 🚀 **Begin with [Experiment 1: Setup & Constitution](workshop/experiment-1/README.md)**
 
 Master the fundamentals of Spec-Driven Development and set up your Recipe Manager project!
+
 

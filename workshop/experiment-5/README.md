@@ -783,7 +783,7 @@ You are a Spec-Driven Development practitioner!
 > **Note:** This exercise is optional and extends the workshop. It teaches transferable skills for your own projects.
 
 ### Goal
-Understand how to create instruction files and custom agent skills to enhance AI assistance in your own projects.
+Understand how to create instruction files and custom skills to enhance AI assistance in your own projects.
 
 ### Background: What You've Been Using
 
@@ -794,7 +794,7 @@ Throughout Levels 1-5, two AI enhancements have been helping you:
    - Provides measurement conversions, dietary restrictions, terminology
    - Improves code generation accuracy for Recipe Manager
 
-2. **SpecKitCoach Agent** (`.github/skills/speckit-coach/SKILL.md`)
+2. **SpecKitCoach skill** (`.github/skills/speckit-coach/SKILL.md`)
    - Specialized AI assistant invoked with `@SpecKitCoach`
    - Provides guided help through Spec-Driven Development workflow
    - Offers encouragement, validates understanding, answers methodology questions
@@ -803,7 +803,9 @@ Throughout Levels 1-5, two AI enhancements have been helping you:
 
 **7.1** Examine the existing instruction file:
 
-Open and review [.github/instructions/recipe-domain.instructions.md](../../.github/instructions/recipe-domain.instructions.md)
+Open and review [.github/instructions/recipe-domain.instructions.md](../../.github/instructions/recipe-domain.instructions.md) in your **recipe-manager project**
+
+> 💡 **Reminder:** This file is in your recipe-manager project (downloaded in Experiment 1). Instruction files must be in the project where you want them to work, not in a separate workshop folder.
 
 Notice the structure:
 - **Domain Overview** — What problem space this covers
@@ -819,11 +821,14 @@ Instruction files are valuable when:
 - ✅ Coding patterns require domain knowledge (measurement conversions)
 - ✅ Validation rules are domain-specific (dietary restrictions)
 - ✅ Multiple team members need consistent AI behavior
+- ✅ Project-specific context improves AI code generation
 
 Skip instruction files when:
 - ❌ Domain is generic (CRUD, basic UI)
 - ❌ Solo project with no specialized knowledge
 - ❌ Short-lived prototype
+
+> ⚠️ **Important:** Instruction files only work when placed in the `.github/instructions/` folder of the project you're working on. They don't work globally across all projects.
 
 **7.3** Create a template for your own domain:
 
@@ -843,37 +848,42 @@ Include sections for:
 
 Copilot generates a customized template you can use in future projects.
 
-**7.4** Examine the SpecKitCoach agent skill:
+**7.4** Examine the SpecKitCoach skill:
 
 Open and review [.github/skills/speckit-coach/SKILL.md](../../.github/skills/speckit-coach/SKILL.md)
 
 Notice the structure:
-- **Your Role** — Agent's purpose and personality
-- **Expertise Areas** — Topics the agent knows deeply
+- **Your Role** — Skill's purpose and personality
+- **Expertise Areas** — Topics the skill knows deeply
 - **Interaction Patterns** — How to respond in different scenarios
 - **Response Guidelines** — Structure and tone
 - **Common Questions** — Frequently asked questions with answers
 - **Example Opening** — What to say when invoked
 
-**7.5** Understand when custom agents help:
+**7.5** Understand when custom skills help:
 
-Custom agent skills are valuable when:
+Custom skills are valuable when:
 - ✅ Workflow has specific methodology (Spec-Driven Development, TDD, DDD)
 - ✅ Team needs guided learning (onboarding, training)
 - ✅ Subject matter expertise is specialized (architecture patterns, security)
 - ✅ Consistent coaching across team members
 
-Skip custom agents when:
+Skip custom skills when:
 - ❌ Generic coding questions (standard Copilot works fine)
 - ❌ No specialized methodology
 - ❌ Solo developer with deep expertise
 
-**7.6** Try invoking the SpecKitCoach agent:
+**7.6** Try invoking the SpecKitCoach skill:
 
 In Copilot Chat, type:
 ```
 @SpecKitCoach What's the difference between /speckit.specify and /speckit.plan?
 ```
+
+> **Note:** If `@SpecKitCoach` doesn't autocomplete or work, try:
+> ```
+> Based on .github/skills/speckit-coach/SKILL.md, what's the difference between /speckit.specify and /speckit.plan?
+> ```
 
 Notice the response is:
 - Contextualized to Spec-Driven Development
@@ -881,13 +891,13 @@ Notice the response is:
 - Provides actionable guidance
 - More specific than generic Copilot
 
-**7.7** Create an agent skill template for your domain:
+**7.7** Create a skill template for your domain:
 
 Ask Copilot:
 ```
-Based on .github/skills/speckit-coach/SKILL.md, create an agent skill template for [YOUR AGENT NAME].
+Based on .github/skills/speckit-coach/SKILL.md, create a skill template for [YOUR SKILL NAME].
 
-My agent should help with: [e.g., "Database migration best practices" or "React performance optimization" or "API security reviews"]
+My skill should help with: [e.g., "Database migration best practices" or "React performance optimization" or "API security reviews"]
 
 Include:
 1. Role definition
@@ -902,7 +912,7 @@ Copilot generates a SKILL.md template you can customize.
 
 ```powershell
 git add .github/templates/
-git commit -m "docs: add instruction file and agent skill templates for future projects"
+git commit -m "docs: add instruction file and skill templates for future projects"
 ```
 
 ### File Path Conventions
@@ -915,7 +925,7 @@ For instruction files:
   └── security.instructions.md
 ```
 
-For agent skills:
+For skills:
 ```
 .github/skills/
   ├── agent-name/
@@ -928,13 +938,13 @@ For agent skills:
 
 ### What You Learned
 - Instruction files teach domain knowledge to GitHub Copilot
-- Agent skills create specialized AI assistants for your workflow
+- skills create specialized AI assistants for your workflow
 - Both are transferable: use in your own projects
 - Structure matters: follow conventions for consistency
 - Custom AI enhancements improve team productivity
 
 ### ✅ Checkpoint
-You can create instruction files and agent skills for your own projects!
+You can create instruction files and skills for your own projects!
 
 ### 🎁 Takeaway
 
@@ -944,7 +954,7 @@ The templates you created in this exercise are **yours to keep**. Use them for:
 - Team onboarding (guide new developers)
 - Personal projects (specialized AI assistance)
 
-**Pro tip:** Share your instruction files and agent skills with teammates. Consistent AI behavior across the team improves code quality and collaboration.
+**Pro tip:** Share your instruction files and skills with teammates. Consistent AI behavior across the team improves code quality and collaboration.
 
 ---
 
@@ -958,7 +968,7 @@ The templates you created in this exercise are **yours to keep**. Use them for:
 ✅ Refined constitution based on implementation learnings  
 ✅ Understood brownfield Spec-Driven Development  
 ✅ Mastered the complete workflow and command set  
-✅ (Optional) Created instruction files and agent skills for future projects  
+✅ (Optional) Created instruction files and skills for future projects  
 
 ### Key Takeaways
 
@@ -1038,5 +1048,6 @@ Thank you for learning with us! 🚀
 ## Quick Reference
 
 See [CHEATSHEET.md](CHEATSHEET.md) for a compact reference of all Experiment 5 concepts, commands, and best practices.
+
 
 
