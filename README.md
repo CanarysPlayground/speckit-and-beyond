@@ -4,15 +4,36 @@
 
 ## Description
 
-**GitHub Spec Kit** is an open-source toolkit that revolutionizes software development by emphasizing **specifications over vibe coding**. Instead of jumping straight into code, Spec Kit guides you through a structured process: define project principles, create rich specifications, generate implementation plans, break down tasks, and execute with AI assistance. This workshop teaches you how to master Spec-Driven Development through hands-on exercises building a real application.
+This workshop teaches you how to **accelerate your development process** by combining three powerful AI-enhanced tools: **GitHub Spec Kit** for structured development, **instruction files** for domain-specific AI assistance, and **custom agents** for methodology coaching. Together, these tools transform how you build software - from vague ideas to production-ready code.
+
+**What makes this workshop different:**
+
+Instead of just learning Spec Kit commands, you'll discover how to create an **AI-powered development environment** where:
+- **Spec Kit** structures your workflow (constitution → specify → plan → tasks → implement)
+- **Instruction files** teach GitHub Copilot your domain (recipe measurements, dietary restrictions, validation rules)
+- **Custom agents** (@SpecKitCoach) provide on-demand methodology guidance and validate your approach
+
+**The result?** AI generates better code because it understands both your project principles AND your domain context. You move faster because specialized agents coach you through best practices without leaving your editor.
+
+### How This Accelerates Development
+
+| Without These Tools | With Spec Kit + Instructions + Agents |
+|---------------------|---------------------------------------|
+| AI suggestions are generic | AI understands your domain and constraints |
+| Spending hours on requirements | Structured specifications in minutes |
+| Frequent rework from misalignment | Constitution ensures consistency |
+| Googling best practices | @SpecKitCoach answers in context |
+| Manual code generation | AI implements from detailed specs |
+| Inconsistent variable names | Domain instructions ensure quality |
 
 ### Key Characteristics
 
-- **Intent-driven development** — Define "what" and "why" before "how"
-- **Works with multiple AI agents** — GitHub Copilot, Claude Code, Cursor, Windsurf, and more
-- **Multi-step refinement** — Structured process from principles to implementation
+- **AI-enhanced workflow** — GitHub Copilot becomes domain-aware through instruction files
+- **Structured methodology** — Spec Kit guides you from principles to implementation  
+- **On-demand coaching** — Custom agents provide methodology help without context switching
+- **Works with multiple AI tools** — GitHub Copilot, Claude Code, Cursor, Windsurf, and more
 - **Technology independent** — Use any tech stack, language, or framework
-- **Editor integration** — Built-in slash commands for seamless workflow
+- **Reusable patterns** — Take instruction files and agents to your own projects
 
 ---
 
@@ -259,12 +280,6 @@ uv --version
 ## Contributing
 
 Found an issue or have suggestions for improving this workshop? Please open an issue or submit a pull request!
-
----
-
-## License
-
-This workshop is licensed under MIT License. See [LICENSE](LICENSE) for details.
 
 ---
 
