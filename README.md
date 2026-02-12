@@ -14,16 +14,6 @@ Instead of just learning Spec Kit commands, you'll discover how to create an **A
 - **Custom skills** (@SpecKitCoach) provide on-demand methodology coaching
 
 **The result?** AI generates better code because it understands both your project principles AND your domain context. You move faster because specialized agents coach you through best practices without leaving your editor.
-
-### Key Characteristics
-
-- **AI-enhanced workflow** — GitHub Copilot becomes domain-aware through instruction files
-- **Structured methodology** — Spec Kit guides you from principles to implementation  
-- **On-demand coaching** — custom skills provide methodology help without context switching
-- **Works with multiple AI tools** — GitHub Copilot, Claude Code, Cursor, Windsurf, and more
-- **Technology independent** — Use any tech stack, language, or framework
-- **Reusable patterns** — Take instruction files, and custom skills to your own projects
-
 ---
 
 ## Workshop Overview
@@ -54,53 +44,6 @@ This real-world application demonstrates how Spec Kit transforms high-level requ
 - **Git** version control ([Download](https://git-scm.com/downloads))
 - **Basic understanding** of software development concepts
 
-> 💡 **Workshop Enhancement:** This workshop includes AI-powered support files (recipe domain instructions and SpecKitCoach skill) that will be downloaded in Experiment 1. These files significantly improve your learning experience by providing domain-specific AI assistance and methodology coaching.
-
----
-
-## Workshop Structure
-
-| Experiment | Topic | Duration | Focus |
-|------------|-------|----------|-------|
-| **1** | Setup & Constitution | 20 min | Install Spec Kit, initialize project, download workshop files, create constitution |
-| **2** | Specify & Clarify | 25 min | Define requirements, ask clarifying questions, refine specifications |
-| **3** | Plan & Tasks | 25 min | Create technical plans, break down into actionable tasks |
-| **4** | Implement & Validate | 30 min | Execute implementation, validate against specs |
-| **5** | Advanced Features | 20 min | Analyze quality, add features iteratively, best practices |
-
----
-
-## Installation
-
-### Step 1: Install Spec Kit
-
-**Option 1: Persistent Installation (Recommended)**
-
-```powershell
-uv tool install specify-cli --from git+https://github.com/github/spec-kit.git
-```
-
-**Option 2: One-time Usage**
-
-```powershell
-uvx --from git+https://github.com/github/spec-kit.git specify init <PROJECT_NAME>
-```
-
-### Step 2: Verify Installation
-
-```powershell
-specify --help
-specify check
-```
-
-### Step 3: Ensure GitHub Copilot is Active
-
-Open VS Code and verify:
-- GitHub Copilot extension is installed and enabled
-- You're signed in with a valid subscription
-- Copilot Chat is accessible (Ctrl+Alt+I or Cmd+Opt+I)
-
----
 
 ## Learning Path
 
@@ -108,9 +51,10 @@ Open VS Code and verify:
 
 Learn how to:
 - Initialize a Spec Kit project
+- Download and configure AI enhancement files (instruction files + custom skills)
 - Create a constitution with project principles
 - Understand the Spec-Driven Development workflow
-- Set up your development environment
+- Set up your AI-powered development environment
 
 ### 🟢 Experiment 2: Specify & Clarify 
 
@@ -141,6 +85,7 @@ Learn how to:
 Learn how to:
 - Use `/speckit.analyze` for consistency checks
 - Create quality checklists with `/speckit.checklist`
+- Explore instruction files and custom skills for domain-specific AI assistance
 - Add features iteratively to existing codebase
 - Apply Spec-Driven Development to brownfield projects
 
@@ -162,20 +107,6 @@ Learn how to:
 └─────────────────────────────────────────────────────────┘
 ```
 
-### Why Spec-Driven Development?
-
-**Traditional Approach:**
-- Start coding immediately
-- Requirements emerge during implementation
-- High risk of rework and misalignment
-- Specifications become outdated documentation
-
-**Spec-Driven Approach:**
-- Define intent and principles first
-- Create executable specifications
-- Generate implementation from specs
-- Specifications drive the code
-
 ### The Power of Specifications
 
 - **Clarity:** Forces you to think through requirements before coding
@@ -183,33 +114,6 @@ Learn how to:
 - **Validation:** Provides a baseline to verify implementation
 - **Iteration:** Makes changes easier by updating specs first
 - **Documentation:** Living specs that evolve with code
-
----
-
-## Workshop Guidelines
-
-### How to Use This Workshop
-
-1. **Follow in sequence** — Each experiment builds on previous knowledge
-2. **Complete all exercises** — Hands-on practice is essential
-3. **Experiment freely** — Spec Kit is forgiving; you can always regenerate
-4. **Read checkpoints** — Verify understanding before moving forward
-5. **Use cheat sheets** — Quick reference cards in each experiment
-6. **Ask questions** — Use GitHub Copilot Chat or @SpecKitCoach for help anytime
-
-### Time Management
-
-- **Strict mode:** Follow time estimates, skip "Extra Challenge" sections
-- **Deep dive mode:** Complete all exercises including challenges
-- **Self-paced:** Take breaks between experiments, revisit concepts
-
-### Best Practices
-
-- 📝 **Write clear specifications** — Be specific about "what" and "why"
-- 🎯 **Focus on outcomes** — Describe desired behavior, not implementation
-- 🔄 **Iterate** — Refine specs based on clarification questions
-- ✅ **Validate early** — Check each step before proceeding
-- 🧪 **Test thoroughly** — Verify implementation matches specifications
 
 ---
 

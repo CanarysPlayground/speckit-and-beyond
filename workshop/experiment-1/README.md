@@ -64,6 +64,38 @@ Throughout this workshop, we'll build a **Recipe Manager** — a practical appli
 
 ---
 
+## Why Spec-Driven Development?
+
+Before we dive into the exercises, let's understand why this approach is transformative:
+
+### Traditional Approach vs. Spec-Driven Approach
+
+| Traditional Approach | Spec-Driven Approach |
+|---------------------|----------------------|
+| Start coding immediately | Define intent and principles first |
+| Requirements emerge during implementation | Create executable specifications |
+| High risk of rework and misalignment | Generate implementation from specs |
+| Specifications become outdated documentation | Specifications drive the code |
+
+### Benefits You'll Experience
+
+1. **Clarity First** — Think through requirements before coding
+2. **Better Alignment** — Ensure team and stakeholders agree on goals
+3. **AI-Ready** — Provide clear context for AI code generation
+4. **Easy Iteration** — Update specs first, then regenerate code
+5. **Living Documentation** — Specs evolve with your code
+
+### How AI Enhances This Process
+
+When you combine Spec-Driven Development with:
+- **Instruction files** → AI understands your domain (measurements, validations, terminology)
+- **Custom skills** → Get methodology coaching without leaving your editor
+- **Spec Kit agents** → Structured workflow from constitution to implementation
+
+**Result:** AI generates better code because it understands both your project principles AND your domain context.
+
+---
+
 ## Exercise 1: Install Spec Kit CLI
 
 ### Goal
