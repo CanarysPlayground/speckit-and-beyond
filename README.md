@@ -115,8 +115,7 @@ Open VS Code and verify:
 
 ## Learning Path
 
-### 🟢 Experiment 1: Setup & Constitution (Beginner)
-**Risk level:** Zero Risk — Setting up environment and defining principles
+### 🟢 Experiment 1: Setup & Constitution
 
 Learn how to:
 - Initialize a Spec Kit project
@@ -124,8 +123,7 @@ Learn how to:
 - Understand the Spec-Driven Development workflow
 - Set up your development environment
 
-### 🟢 Experiment 2: Specify & Clarify (Beginner)
-**Risk level:** Zero Risk — Read-only specification work
+### 🟢 Experiment 2: Specify & Clarify 
 
 Learn how to:
 - Write effective specifications focused on "what" not "how"
@@ -133,8 +131,7 @@ Learn how to:
 - Refine requirements through AI-guided questions
 - Create user-centric feature descriptions
 
-### 🟡 Experiment 3: Plan & Tasks (Intermediate)
-**Risk level:** Low Risk — Planning and task breakdown
+### 🟡 Experiment 3: Plan & Tasks 
 
 Learn how to:
 - Create technical implementation plans with your chosen tech stack
@@ -142,8 +139,7 @@ Learn how to:
 - Break down plans into actionable tasks with `/speckit.tasks`
 - Review and prioritize task lists
 
-### 🟡 Experiment 4: Implement & Validate (Intermediate)
-**Risk level:** Medium Risk — Actual code generation and validation
+### 🟡 Experiment 4: Implement & Validate 
 
 Learn how to:
 - Execute implementation with `/speckit.implement`
@@ -152,7 +148,6 @@ Learn how to:
 - Test the generated application
 
 ### 🟠 Experiment 5: Advanced Features (Advanced)
-**Risk level:** Medium Risk — Quality analysis and iteration
 
 Learn how to:
 - Use `/speckit.analyze` for consistency checks
@@ -170,8 +165,8 @@ Learn how to:
 ┌─────────────────────────────────────────────────────────┐
 │                                                         │
 │  1. Constitution → 2. Specify → 3. Plan → 4. Tasks      │
-│                                     ↓                   │
-│                              5. Implement               │
+│                                      ↓                   │
+│                              5. Implement              │
 │                                     ↓                   │
 │                      6. Validate & Iterate              │
 │                                                         │
