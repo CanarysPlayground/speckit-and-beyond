@@ -123,7 +123,7 @@ Before you begin your first day at FlavorHub, ensure you have:
 
 ## Ready to Begin Your Mission?
 
-🚀 **Start Your First Day: [Experiment 1: Setup & Constitution](workshop/experiment-1/README.md)**
+🚀 **Start Your First Day: [Experiment 1: Setup & Constitution](workshop/experiment-1.md)**
 
 The CTO is waiting. FlavorHub's users are counting on you. Show them what AI-assisted Spec-Driven Development can do.
 

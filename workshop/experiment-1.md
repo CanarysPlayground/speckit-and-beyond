@@ -982,19 +982,12 @@ You've laid the foundation for FlavorHub's next-generation Recipe Manager. Your 
 
 ## Your Next Assignment
 
-🚀 **Day 2 Mission: [Experiment 2: Specify & Clarify](../experiment-2/README.md)**
+🚀 **Day 2 Mission: [Experiment 2: Specify & Clarify](experiment-2.md)**
 
 **Objective:** Transform vague user stories into crisp, AI-ready specifications. Learn to identify underspecified requirements before they become production bugs.
 
 **Deadline:** 25 minutes  
 **Stakes:** The holiday season launch depends on clear specifications
-
----
-
-## Quick Reference
-
-📋 **Mission Briefing Document:** [CHEATSHEET.md](CHEATSHEET.md)  
-Compact reference for all Experiment 1 commands, concepts, and troubleshooting guides.
 
 
 

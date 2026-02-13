@@ -1043,11 +1043,7 @@ You've successfully completed the **Getting Started with GitHub Spec Kit** works
 
 Thank you for learning with us! 🚀
 
----
 
-## Quick Reference
-
-See [CHEATSHEET.md](CHEATSHEET.md) for a compact reference of all Experiment 5 concepts, commands, and best practices.
 
 
 
