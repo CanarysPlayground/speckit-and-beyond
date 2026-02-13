@@ -143,33 +143,6 @@ Before you begin your first day at FlavorHub, ensure you have:
 
 ---
 
-## Workshop Guidelines
-
-### How to Use This Workshop
-
-1. **Follow in sequence** — Each experiment builds on previous knowledge
-2. **Complete all exercises** — Hands-on practice is essential
-3. **Experiment freely** — Spec Kit is forgiving; you can always regenerate
-4. **Read checkpoints** — Verify understanding before moving forward
-5. **Use cheat sheets** — Quick reference cards in each experiment
-6. **Ask questions** — Use GitHub Copilot Chat or @SpecKitCoach for help anytime
-
-### Time Management
-
-- **Strict mode:** Follow time estimates, skip "Extra Challenge" sections
-- **Deep dive mode:** Complete all exercises including challenges
-- **Self-paced:** Take breaks between experiments, revisit concepts
-
-### Best Practices
-
-- 📝 **Write clear specifications** — Be specific about "what" and "why"
-- 🎯 **Focus on outcomes** — Describe desired behavior, not implementation
-- 🔄 **Iterate** — Refine specs based on clarification questions
-- ✅ **Validate early** — Check each step before proceeding
-- 🧪 **Test thoroughly** — Verify implementation matches specifications
-
----
-
 ## Additional Resources
 
 - **Official Documentation:** [https://github.github.io/spec-kit/](https://github.github.io/spec-kit/)
@@ -177,11 +150,6 @@ Before you begin your first day at FlavorHub, ensure you have:
 - **Spec-Driven Development Guide:** [spec-driven.md](https://github.com/github/spec-kit/blob/main/spec-driven.md)
 - **Video Overview:** [Watch on YouTube](https://www.youtube.com/watch?v=a9eR1xsfvHg)
 
----
-
-## Contributing
-
-Found an issue or have suggestions for improving this workshop? Please open an issue or submit a pull request!
 
 ---
 
