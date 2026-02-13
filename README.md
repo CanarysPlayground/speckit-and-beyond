@@ -52,8 +52,6 @@ Throughout this workshop, you'll architect and build FlavorHub's **Recipe Manage
 - 🤝 Share recipes with the global FlavorHub community
 - ⭐ Rate, review, and discover trending recipes
 
-This isn't a toy app. This is a **real-world application** that demonstrates how Spec-Driven Development transforms vague requirements into production-ready software through a structured, AI-assisted process.
-
 ---
 
 ## Mission Prerequisites
@@ -65,10 +63,6 @@ Before you begin your first day at FlavorHub, ensure you have:
 - ✅ **Python 3.11+** ([Download](https://www.python.org/downloads/))
 - ✅ **uv** package manager ([Install](https://docs.astral.sh/uv/))
 - ✅ **Git** version control ([Download](https://git-scm.com/downloads))
-- ✅ **Basic understanding** of software development concepts
-- ✅ **2 hours** of focused time to complete your onboarding
-
-> 💡 **FlavorHub Engineering Toolkit:** During Experiment 1, you'll download AI-powered support files (recipe domain instructions and SpecKitCoach skill) that significantly accelerate your development velocity.
 
 
 ## Learning Path
@@ -114,32 +108,6 @@ Before you begin your first day at FlavorHub, ensure you have:
 - Explore instruction files and custom skills for domain-specific AI assistance
 - Add features iteratively to existing codebase
 - Apply Spec-Driven Development to brownfield projects
-
----
-
-## Key Concepts
-
-### Spec-Driven Development Process
-
-```
-┌─────────────────────────────────────────────────────────┐
-│                                                         │
-│  1. Constitution → 2. Specify → 3. Plan → 4. Tasks      │
-│                                      ↓                   │
-│                              5. Implement              │
-│                                     ↓                   │
-│                      6. Validate & Iterate              │
-│                                                         │
-└─────────────────────────────────────────────────────────┘
-```
-
-### The Power of Specifications
-
-- **Clarity:** Forces you to think through requirements before coding
-- **Alignment:** Ensures team and stakeholders agree on goals
-- **Validation:** Provides a baseline to verify implementation
-- **Iteration:** Makes changes easier by updating specs first
-- **Documentation:** Living specs that evolve with code
 
 ---
 
