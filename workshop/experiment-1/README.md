@@ -1,66 +1,87 @@
-# Experiment 1: Setup & Constitution — Building the Foundation
+# Experiment 1: Setup & Constitution — Your First Day at FlavorHub
 
-> **Risk level:** 🟢 Zero — This experiment only sets up your environment and defines project principles.
+> **Mission Status:** 🟢 Zero Risk — This experiment sets up your development environment and establishes project principles.
 
 ## Learning Objectives
 
-By the end of this level, you will be able to:
+By the end of your first day, you will be able to:
 
-1. Install and configure Spec Kit CLI successfully
-2. Initialize a Spec-Driven Development project structure
-3. Understand the `.speckit/` directory and its purpose
-4. Create a project constitution with governing principles
-5. Define development guidelines that shape all future work
-6. Understand the role of principles in automated development
-7. Navigate the Spec Kit workflow and slash commands
-8. Verify your development environment is ready
-9. Understand the difference between greenfield and brownfield projects
-10. Set up VS Code with proper Spec Kit integration
+1. ✅ Install and configure Spec Kit CLI on your workstation
+2. ✅ Initialize a Spec-Driven Development project for FlavorHub
+3. ✅ Understand the project structure (agents, specs, templates)
+4. ✅ Download and configure FlavorHub's AI enhancement toolkit
+5. ✅ Create a project constitution that governs all future development
+6. ✅ Define development principles that AI will respect
+7. ✅ Navigate the Spec Kit workflow and slash commands
+8. ✅ Verify your environment is production-ready
+9. ✅ Distinguish between greenfield and brownfield approaches
+10. ✅ Integrate Spec Kit with VS Code and GitHub Copilot
 
 ---
 
 ## Prerequisites
 
+Before starting your first day at FlavorHub, verify you have:
+
 - [ ] VS Code installed with GitHub Copilot extension enabled
 - [ ] Python 3.11+ installed (`python --version`)
 - [ ] uv package manager installed (`uv --version`)
 - [ ] Git installed (`git --version`)
-- [ ] Valid GitHub Copilot subscription
-- [ ] Internet connection (for AI model access)
+- [ ] Valid GitHub Copilot subscription (check status bar icon)
+- [ ] Stable internet connection (for AI model access)
 
 ---
 
-## Workshop Structure
+## Your First Day Schedule
 
-This experiment contains **9 exercises**, building progressively. Estimated time: **20 minutes**.
+This experiment contains **9 exercises** that build progressively. Estimated time: **20 minutes**.
 
-| Exercise | Topic | Time |
-|----------|-------|------|
+| Exercise | Mission Objective | Time |
+|----------|------------------|------|
 | 1 | Install Spec Kit CLI | 2 min |
-| 2 | Initialize Your First Project | 3 min |
-| 3 | Download Workshop Support Files | 3 min |
-| 4 | Explore the Project Structure | 2 min |
+| 2 | Initialize FlavorHub Recipe Manager Project | 3 min |
+| 3 | Download FlavorHub AI Toolkit | 3 min |
+| 4 | Explore Project Structure | 2 min |
 | 5 | Verify Spec Kit Integration | 2 min |
-| 6 | Create Your Constitution | 4 min |
-| 7 | Understanding Principles | 2 min |
+| 6 | Create FlavorHub Constitution | 4 min |
+| 7 | Understanding Development Principles | 2 min |
 | 8 | Testing the Workflow | 1 min |
-| 9 | Environment Validation | 1 min |
+| 9 | Environment Validation Checklist | 1 min |
 
 ---
 
-## The Story: Recipe Manager Application
+## Your First Day at FlavorHub
 
-Throughout this workshop, we'll build a **Recipe Manager** — a practical application that helps users organize, search, and share their favorite recipes.
+**Date:** Today  
+**Time:** 9:00 AM  
+**Location:** FlavorHub Engineering HQ (Remote)
 
-### User Story
-*"As a home cook, I want to store my family recipes digitally so I can access them from any device, search by ingredients, generate shopping lists, and share them with friends."*
+You've just joined **FlavorHub** as a Senior Software Engineer. During your onboarding call, the CTO drops a challenge:
 
-### Why This Application?
-- **Familiar domain** — Everyone understands recipes
-- **Rich features** — Multiple user workflows to explore
-- **Clear requirements** — Easy to specify without technical jargon
-- **Iterative potential** — Start simple, add complexity progressively
-- **Real-world value** — Actually useful application
+> *"Welcome aboard! We need you to architect our next-generation Recipe Manager using this new Spec-Driven Development methodology. It's critical for our holiday season launch. The product team has requirements, but they're scattered across Slack threads, meeting notes, and whiteboard photos. Your mission: turn chaos into clarity, then into code. We're betting on AI-assisted development to 10x our velocity. Show us what's possible."*
+
+### Your Assignment: Recipe Manager Rebuild
+
+Build a production-ready application that allows FlavorHub users to:
+- 📚 **Store recipes** with proper metadata (prep time, servings, difficulty)
+- 🔍 **Search intelligently** by ingredients, cuisine, or dietary restrictions
+- 🛒 **Generate shopping lists** with measurement conversions
+- 🤝 **Share globally** with the FlavorHub community
+- ⭐ **Discover trending** recipes through ratings and reviews
+
+### Why This Project Matters
+- **Business Impact** — 10M+ users depend on this for holiday meal planning
+- **Technical Challenge** — Complex domain (measurements, allergies, conversions)
+- **Learning Opportunity** — Perfect testbed for Spec-Driven Development
+- **Career Growth** — Master AI-assisted development methodology
+- **Real-World Stakes** — Specifications prevent costly rework
+
+### Your Success Criteria
+✅ Clear specifications that align stakeholders  
+✅ AI that generates domain-aware code (understands culinary rules)  
+✅ Implementation that matches specifications exactly  
+✅ Methodology you can apply to any future project  
+✅ Confidence to lead Spec-Driven Development at FlavorHub
 
 ---
 
@@ -156,6 +177,65 @@ You can run `specify --version` and `specify check` successfully.
 
 ---
 
+## Troubleshooting Installation Issues
+
+If you encounter problems during installation, here are solutions to common issues:
+
+### Issue: `specify: command not found`
+
+**Solution:** Ensure uv tool installation path is in your PATH:
+
+```powershell
+# Check if specify is installed
+uv tool list
+
+# If missing, reinstall
+uv tool install specify-cli --from git+https://github.com/github/spec-kit.git
+```
+
+### Issue: GitHub Copilot not responding to `/speckit.*` commands
+
+**Solution:**
+1. Ensure you've run `specify init` in your project
+2. Restart VS Code
+3. Verify `agents/` directory exists in your project root
+4. Check that GitHub Copilot extension is active (look for Copilot icon in status bar)
+
+### Issue: Python version error
+
+**Solution:** Install Python 3.11 or higher:
+
+```powershell
+python --version  # Check current version
+# Download from https://www.python.org/downloads/ if needed
+```
+
+### Issue: uv not installed
+
+**Solution:** Install uv package manager:
+
+```powershell
+# Windows (PowerShell)
+irm https://astral.sh/uv/install.ps1 | iex
+
+# macOS/Linux
+curl -LsSf https://astral.sh/uv/install.sh | sh
+
+# Verify installation
+uv --version
+```
+
+### Issue: Git not installed
+
+**Solution:** Download and install Git:
+- **Windows:** Download from [git-scm.com](https://git-scm.com/downloads)
+- **macOS:** `brew install git` or download from git-scm.com
+- **Linux:** `sudo apt install git` (Ubuntu/Debian) or `sudo yum install git` (RedHat/CentOS)
+
+> 💡 **Tip:** After installing any prerequisites, restart your terminal and VS Code to ensure environment variables are properly loaded.
+
+---
+
 ## Exercise 2: Initialize Your First Project
 
 ### Goal
@@ -216,19 +296,20 @@ You have a `recipe-manager/` directory open in VS Code with `agents/`, `specify/
 
 ---
 
-## Exercise 3: Download Workshop Support Files
+## Exercise 3: Download FlavorHub's AI Enhancement Toolkit
 
 ### Goal
-Add AI enhancements that make this workshop easier and more effective.
+Equip your development environment with domain-specific AI intelligence that understands culinary best practices.
 
 ### Context
 
-This workshop includes two powerful AI enhancements that will help you throughout:
+FlavorHub's Engineering team has prepared two powerful AI enhancements specifically for this project:
 
 1. **Recipe Domain Instructions** (`.github/instructions/recipe-domain.instructions.md`)
-   - Teaches GitHub Copilot about recipe terminology, measurements, and validation
-   - Improves AI code generation accuracy for the Recipe Manager
-   - Provides context on dietary restrictions, conversions, and best practices
+   - Teaches GitHub Copilot about culinary terminology, measurements, and validation rules
+   - Improves AI code generation accuracy for recipe-related features
+   - Provides context on dietary restrictions, unit conversions, and food safety standards
+   - **Works automatically** when you work in the recipe-manager project
 
 2. **SpecKitCoach skill** (`.github/skills/speckit-coach/SKILL.md`)
    - Your personal AI guide for Spec-Driven Development
@@ -538,40 +619,42 @@ You can see `/speckit.*` commands in the Copilot Chat autocomplete.
 
 ---
 
-## Exercise 6: Create Your Constitution
+## Exercise 6: Create FlavorHub's Project Constitution
 
 ### Goal
-Generate project-governing principles that will guide all development decisions.
+Establish the governing principles that will guide all Recipe Manager development decisions.
 
 ### Context
 
-A **constitution** in Spec-Driven Development is similar to a project charter or guiding document. It defines:
-- **Core values** — What matters most (performance, security, UX, etc.)
+A **constitution** in Spec-Driven Development is FlavorHub's north star. It defines:
+- **Core values** — What matters most (performance, security, UX, reliability)
 - **Development standards** — Code quality, testing, documentation requirements
-- **Constraints** — Technical limitations, compliance requirements
-- **User focus** — Who you're building for and why
+- **Technical constraints** — Scalability targets, compliance requirements, platform support
+- **User focus** — Who you're building for (10M+ home cooks) and why
 
-The constitution is **referenced by AI** when generating specifications, plans, and code. Think of it as the "personality" of your project.
+The constitution is **referenced by AI** when generating specifications, plans, and code. Think of it as the "DNA" of your project — every decision traces back to these principles.
 
 ### Steps
 
-**5.1** In Copilot Chat, invoke the constitution command:
+**6.1** In Copilot Chat, invoke the constitution command:
 
 ```
 /speckit.constitution
 ```
 
-**5.2** When prompted, provide guidance for the Recipe Manager principles:
+**6.2** When prompted, provide FlavorHub's Recipe Manager guiding principles:
 
 ```
-Create a constitution for a Recipe Manager application with these priorities:
+Create a constitution for FlavorHub's Recipe Manager application with these priorities:
 
-1. User Experience: Simple, intuitive interface accessible to non-technical users
-2. Data Privacy: User recipes are stored locally, no cloud dependencies required
-3. Search Performance: Fast recipe search across 1000+ recipes (< 100ms)
-4. Code Quality: Well-tested Python code with 80%+ coverage, type hints throughout
-5. Cross-Platform: Works on Windows, macOS, Linux
-6. Extensibility: Plugin architecture for future features (meal planning, nutrition tracking)
+1. User Experience: Simple, intuitive interface accessible to all skill levels (novice to professional chef)
+2. Performance: Handle 10M+ concurrent users during holiday season peaks
+3. Data Privacy: User recipes stored securely, GDPR/CCPA compliant
+4. Search Speed: Sub-100ms recipe search across millions of recipes
+5. Code Quality: Well-tested Python code with 80%+ coverage, comprehensive type hints
+6. Cross-Platform: Seamless experience on Windows, macOS, Linux, and mobile web
+7. Culinary Accuracy: Respect measurement standards, conversions, and food safety rules
+8. Extensibility: Plugin architecture for future features (meal planning, nutrition AI, shopping delivery integration)
 7. Accessibility: WCAG 2.1 AA compliance for web interface
 8. Offline-First: Full functionality without internet connection
 
@@ -864,17 +947,54 @@ A: Yes! Use Git to merge constitution changes like any code file.
 
 ---
 
-## Next Steps
+## Mission Accomplished: Day 1 Complete! ✅
 
-🚀 **Proceed to [Experiment 2: Specify & Clarify](../experiment-2/README.md)**
+**Status Report to CTO:**
+- ✅ Development environment operational
+- ✅ Spec Kit CLI installed and verified
+- ✅ FlavorHub Recipe Manager project initialized
+- ✅ AI enhancement toolkit downloaded and configured
+- ✅ Project constitution established with governing principles
+- ✅ Team aligned on priorities and constraints
 
-Learn how to transform user stories into rich, AI-ready specifications and explore underspecified areas with clarifying questions.
+**What You've Achieved:**
+
+You've laid the foundation for FlavorHub's next-generation Recipe Manager. Your constitution ensures that every line of code, every specification, and every architectural decision aligns with FlavorHub's core values: performance, user experience, and culinary accuracy.
+
+**Key Takeaways:**
+
+1. **Constitution is foundational** — It shapes every subsequent decision
+2. **Spec Kit extends AI** — Slash commands are project-specific workflows  
+3. **Iterative by design** — You can update constitution, specs, plans anytime
+4. **Tool-agnostic** — Works with Copilot, Claude, Cursor, and more
+5. **Git-integrated** — Version control is built into the workflow
+
+**Time Investment ROI:**
+
+20 minutes spent on Experiment 1 prevents:
+- ❌ Hours of misaligned implementation
+- ❌ Multiple costly refactoring cycles
+- ❌ Team debates about competing priorities
+- ❌ Scope creep and feature bloat
+- ❌ AI-generated code that violates culinary best practices
+
+---
+
+## Your Next Assignment
+
+🚀 **Day 2 Mission: [Experiment 2: Specify & Clarify](../experiment-2/README.md)**
+
+**Objective:** Transform vague user stories into crisp, AI-ready specifications. Learn to identify underspecified requirements before they become production bugs.
+
+**Deadline:** 25 minutes  
+**Stakes:** The holiday season launch depends on clear specifications
 
 ---
 
 ## Quick Reference
 
-See [CHEATSHEET.md](CHEATSHEET.md) for a compact reference of all Experiment 1 concepts, commands, and best practices.
+📋 **Mission Briefing Document:** [CHEATSHEET.md](CHEATSHEET.md)  
+Compact reference for all Experiment 1 commands, concepts, and troubleshooting guides.
 
 
 

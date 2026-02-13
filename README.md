@@ -1,88 +1,114 @@
 # Getting Started with GitHub Spec Kit
 
-> **Learn Spec-Driven Development**: Build high-quality software faster by defining intent before implementation.
+> **Mission Brief**: Transform how you build software using AI-assisted Spec-Driven Development. Your next project depends on it.
 
-## Description
+## Your Mission Begins Here
 
-This workshop teaches you how to **accelerate your development process** by combining three powerful AI-enhanced tools: **GitHub Spec Kit** for structured development, **instruction files** for domain-specific AI assistance, and **custom skills** for methodology coaching. Together, these tools transform how you build software - from vague ideas to production-ready code.
+**Welcome to FlavorHub**, the world's fastest-growing recipe community platform! Founded in 2018, our platform has connected millions of home cooks, professional chefs, and food enthusiasts worldwide. From family recipes passed down through generations to cutting-edge molecular gastronomy, FlavorHub has become the go-to destination for culinary inspiration.
 
-**What makes this workshop different:**
+However, our **rapid growth has exposed cracks in our development process**. Features take weeks to ship, specifications drift from implementation, and our AI assistants generate code that doesn't align with our domain expertise. The holiday cooking season is approaching, and we need to deliver our next-generation Recipe Manager to handle millions of concurrent users while providing real-time recommendations and seamless recipe sharing.
 
-Instead of just learning Spec Kit commands, you'll discover how to create an **AI-powered development environment** where:
-- **Spec Kit** structures your workflow (constitution → specify → plan → tasks → implement)
-- **Instruction files** teach GitHub Copilot your domain (recipe measurements, dietary restrictions, validation rules)
-- **Custom skills** (@SpecKitCoach) provide on-demand methodology coaching
+**As a newly hired Senior Software Engineer at FlavorHub**, your mission is to modernize our development methodology. The executive team has tasked you with learning and implementing **Spec-Driven Development** — a revolutionary approach that combines structured workflows, domain-specific AI assistance, and methodology coaching to ship high-quality software faster.
 
-**The result?** AI generates better code because it understands both your project principles AND your domain context. You move faster because specialized agents coach you through best practices without leaving your editor.
+---
+
+## What Makes This Mission Critical
+
+This workshop teaches you how to **transform your development process** by combining three powerful AI-enhanced tools:
+
+🎯 **GitHub Spec Kit** — Structures your workflow from intent to implementation  
+🧠 **Instruction Files** — Teaches AI your domain (recipe measurements, dietary restrictions, validation rules)  
+🎓 **Custom Skills** — Provides on-demand methodology coaching without leaving your editor  
+
+**The Stakes:**
+- Holiday season traffic (10M+ concurrent users) launches in 8 weeks
+- Marketing has promised next-gen features without consulting engineering
+- Legacy codebase has no clear specifications or design documentation
+- Your AI assistants generate generic code that violates culinary best practices
+
+**Your Advantage:**
+
+Instead of traditional development chaos, you'll create an **AI-powered development environment** where:
+- **Spec Kit** prevents scope creep and ensures alignment (constitution → specify → plan → implement)
+- **Instruction files** make AI understand culinary measurements, conversions, and food safety rules
+- **Custom skills** (@SpecKitCoach) coach you through best practices in real-time
+
+**The result?** AI generates better code because it understands both your project principles AND your domain context. You ship faster because specifications drive implementation, not the other way around.
+
 ---
 
 ## Workshop Overview
 
 **Total Duration:** 2 hours  
 **Format:** Hands-on exercises with progressive difficulty  
-**Application:** Recipe Manager (a practical, feature-rich app everyone can understand)
+**Your Assignment:** Build the next-generation Recipe Manager for FlavorHub
 
 ### What You'll Build
 
-Throughout this workshop, you'll build a **Recipe Manager Application** that allows users to:
-- Store and organize their favorite recipes
-- Search recipes by ingredients, cuisine, or dietary restrictions
-- Create shopping lists from recipe ingredients
-- Share recipes with friends and family
-- Rate and review recipes
+Throughout this workshop, you'll architect and build FlavorHub's **Recipe Manager Application** that allows users to:
+- 📚 Store and organize their favorite recipes with rich metadata
+- 🔍 Search recipes by ingredients, cuisine, or dietary restrictions
+- 🛒 Generate smart shopping lists from selected recipes
+- 🤝 Share recipes with the global FlavorHub community
+- ⭐ Rate, review, and discover trending recipes
 
-This real-world application demonstrates how Spec Kit transforms high-level requirements into working software through a structured, AI-assisted process.
+This isn't a toy app. This is a **real-world application** that demonstrates how Spec-Driven Development transforms vague requirements into production-ready software through a structured, AI-assisted process.
 
 ---
 
-## Requirements
+## Mission Prerequisites
 
-- **Valid GitHub Copilot subscription** (Individual, Business, or Enterprise)
-- **VS Code** installed with GitHub Copilot extension
-- **Python 3.11+** ([Download](https://www.python.org/downloads/))
-- **uv** package manager ([Install](https://docs.astral.sh/uv/))
-- **Git** version control ([Download](https://git-scm.com/downloads))
-- **Basic understanding** of software development concepts
+Before you begin your first day at FlavorHub, ensure you have:
+
+- ✅ **Valid GitHub Copilot subscription** (Individual, Business, or Enterprise)
+- ✅ **VS Code** installed with GitHub Copilot extension
+- ✅ **Python 3.11+** ([Download](https://www.python.org/downloads/))
+- ✅ **uv** package manager ([Install](https://docs.astral.sh/uv/))
+- ✅ **Git** version control ([Download](https://git-scm.com/downloads))
+- ✅ **Basic understanding** of software development concepts
+- ✅ **2 hours** of focused time to complete your onboarding
+
+> 💡 **FlavorHub Engineering Toolkit:** During Experiment 1, you'll download AI-powered support files (recipe domain instructions and SpecKitCoach skill) that significantly accelerate your development velocity.
 
 
 ## Learning Path
 
-### 🟢 Experiment 1: Setup & Constitution
+### 🟢 Experiment 1: Setup & Constitution — Mission Briefing
 
-Learn how to:
-- Initialize a Spec Kit project
-- Download and configure AI enhancement files (instruction files + custom skills)
-- Create a constitution with project principles
+**Your first day objectives:**
+- Install Spec Kit CLI and configure development environment
+- Download FlavorHub's AI enhancement toolkit (instruction files + custom skills)
+- Create project constitution with governing principles
 - Understand the Spec-Driven Development workflow
-- Set up your AI-powered development environment
+- Pass environment validation and prepare for implementation
 
-### 🟢 Experiment 2: Specify & Clarify 
+### 🟢 Experiment 2: Specify & Clarify — Requirements Intelligence
 
-Learn how to:
+**Transform chaos into clarity:**
 - Write effective specifications focused on "what" not "how"
-- Use `/speckit.clarify` to explore underspecified areas
-- Refine requirements through AI-guided questions
-- Create user-centric feature descriptions
+- Use `/speckit.clarify` to expose underspecified requirements
+- Refine specifications through AI-guided questioning
+- Create user-centric feature descriptions that prevent rework
 
-### 🟡 Experiment 3: Plan & Tasks 
+### 🟡 Experiment 3: Plan & Tasks — Architecture Design
 
-Learn how to:
+**Design before you code:**
 - Create technical implementation plans with your chosen tech stack
-- Use `/speckit.plan` to define architecture
-- Break down plans into actionable tasks with `/speckit.tasks`
-- Review and prioritize task lists
+- Use `/speckit.plan` to define system architecture
+- Break down plans into actionable task lists with `/speckit.tasks`
+- Review and prioritize implementation sequence
 
-### 🟡 Experiment 4: Implement & Validate 
+### 🟡 Experiment 4: Implement & Validate — Code Generation
 
-Learn how to:
+**Ship with confidence:**
 - Execute implementation with `/speckit.implement`
 - Validate generated code against specifications
-- Debug and fix implementation issues
-- Test the generated application
+- Debug and fix implementation issues systematically
+- Test the Recipe Manager application end-to-end
 
-### 🟠 Experiment 5: Advanced Features (Advanced)
+### 🟠 Experiment 5: Advanced Features — Mastery Level
 
-Learn how to:
+**Become a Spec-Driven Development expert:**
 - Use `/speckit.analyze` for consistency checks
 - Create quality checklists with `/speckit.checklist`
 - Explore instruction files and custom skills for domain-specific AI assistance
@@ -117,42 +143,30 @@ Learn how to:
 
 ---
 
-## Troubleshooting
+## Workshop Guidelines
 
-### Common Issues
+### How to Use This Workshop
 
-**Issue:** `specify: command not found`  
-**Solution:** Ensure uv tool installation path is in your PATH:
-```powershell
-# Check if specify is installed
-uv tool list
+1. **Follow in sequence** — Each experiment builds on previous knowledge
+2. **Complete all exercises** — Hands-on practice is essential
+3. **Experiment freely** — Spec Kit is forgiving; you can always regenerate
+4. **Read checkpoints** — Verify understanding before moving forward
+5. **Use cheat sheets** — Quick reference cards in each experiment
+6. **Ask questions** — Use GitHub Copilot Chat or @SpecKitCoach for help anytime
 
-# If missing, reinstall
-uv tool install specify-cli --from git+https://github.com/github/spec-kit.git
-```
+### Time Management
 
-**Issue:** GitHub Copilot not responding to `/speckit.*` commands  
-**Solution:**
-1. Ensure you've run `specify init` in your project
-2. Restart VS Code
-3. Verify `.speckit/` directory exists in your project root
+- **Strict mode:** Follow time estimates, skip "Extra Challenge" sections
+- **Deep dive mode:** Complete all exercises including challenges
+- **Self-paced:** Take breaks between experiments, revisit concepts
 
-**Issue:** Python version error  
-**Solution:** Install Python 3.11 or higher:
-```powershell
-python --version  # Check current version
-# Download from python.org if needed
-```
+### Best Practices
 
-**Issue:** uv not installed  
-**Solution:** Install uv package manager:
-```powershell
-# Windows (PowerShell)
-irm https://astral.sh/uv/install.ps1 | iex
-
-# Verify installation
-uv --version
-```
+- 📝 **Write clear specifications** — Be specific about "what" and "why"
+- 🎯 **Focus on outcomes** — Describe desired behavior, not implementation
+- 🔄 **Iterate** — Refine specs based on clarification questions
+- ✅ **Validate early** — Check each step before proceeding
+- 🧪 **Test thoroughly** — Verify implementation matches specifications
 
 ---
 
@@ -171,10 +185,12 @@ Found an issue or have suggestions for improving this workshop? Please open an i
 
 ---
 
-## Ready to Start?
+## Ready to Begin Your Mission?
 
-🚀 **Begin with [Experiment 1: Setup & Constitution](workshop/experiment-1/README.md)**
+🚀 **Start Your First Day: [Experiment 1: Setup & Constitution](workshop/experiment-1/README.md)**
 
-Master the fundamentals of Spec-Driven Development and set up your Recipe Manager project!
+The CTO is waiting. FlavorHub's users are counting on you. Show them what AI-assisted Spec-Driven Development can do.
+
+**Your mission, should you choose to accept it:** Transform how FlavorHub builds software, one specification at a time.
 
 
